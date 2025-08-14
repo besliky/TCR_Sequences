@@ -1,0 +1,1917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeekSoulTools v1.3.0 - Complete Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .toc {
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+        .toc h2 {
+            margin-top: 0;
+        }
+        .toc ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .toc li {
+            margin: 5px 0;
+        }
+        .toc a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .toc a:hover {
+            color: #007bff;
+        }
+        .section {
+            margin: 40px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .section h1 {
+            color: #007bff;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        .section h2 {
+            color: #333;
+            margin-top: 30px;
+        }
+        .section h3 {
+            color: #555;
+        }
+        pre {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            background: #f8f9fa;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .file-path {
+            background: #e9ecef;
+            padding: 10px;
+            border-radius: 3px;
+            font-family: monospace;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>SeekSoulTools v1.3.0 - Complete Documentation</h1>
+    
+    <div class="toc">
+        <h2>Table of Contents</h2>
+        <ul id="toc-list">
+        </ul>
+    </div>
+    
+    <div id="content">
+
+        <div class="section" id="section-0">
+            <h1>SeekSoulTools — seeksoultools  documentation</h1>
+            <div class="file-path">Source: seeksoul.seekgene.com/en/v1.3.0/index.html</div>
+            <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<section id="seeksoultools">
+<h1>SeekSoulTools<a class="headerlink" href="index.html#seeksoultools" title="Link to this heading"></a></h1>
+<p>SeekSoulTools is a software developed by <a class="reference external" href="https://www.seekgene.com/">SEEKGENE</a> for processing single-cell transcriptome data. Currently, the software contains five modules.</p>
+<ol class="arabic simple">
+<li><p><a class="reference internal" href="2.tutorial/1.rna.html#rna-label"><span class="std std-ref">rna module</span></a>: This module is used for identifying cell barcode, genome alignment and gene quantification to obtain a feature-barcode matrix that can be used for downstream analsis, followed by cell clustering and differential analysis. This module not only support data from <a class="reference external" href="https://www.seekgene.com/">SeekOne™</a> transcriptome kits, it also supports a variety of customized structure designs.</p></li>
+<li><p><a class="reference internal" href="2.tutorial/2.fast.html#fast-label"><span class="std std-ref">fast module</span></a>: This module is specifically designed for data produced by the SeekOne™ DD Single Cell Full-length RNA Sequence Transcriptome-seq Kit, which is used for barcode extraction, paired-end read alignment, quantification, and unique metrics analysis for full-length transcriptome data.</p></li>
+<li><p><a class="reference internal" href="2.tutorial/3.vdj.html#vdj-label"><span class="std std-ref">vdj module</span></a>: This module is specifically designed for data produced by the SeekOne™ DD Single Cell Immune Profiling Kit, which is used for assembling, filtering, and annotating immune receptors.</p></li>
+<li><p><a class="reference internal" href="2.tutorial/4.multivdj.html#multivdj-label"><span class="std std-ref">multivdj module</span></a>: This module is used for joint analysis of 5' RNA and VDJ data.</p></li>
+<li><p><a class="reference internal" href="2.tutorial/0.utils.html#utils-label"><span class="std std-ref">utils module</span></a>: The module contains other small tools.</p></li>
+</ol>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="0.download.html">Download</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1.install.html">Installation Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2.tutorial.html">Tutorials</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="2.tutorial/1.rna.html">rna module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2.tutorial/2.fast.html">fast module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2.tutorial/3.vdj.html">vdj module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2.tutorial/4.multivdj.html">multivdj module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2.tutorial/0.utils.html">utils module</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="release.html">Release Notes</a></li>
+</ul>
+</div>
+</section>
+</div>
+</div>
+        </div>
+        
+
+        <div class="section" id="section-1">
+            <h1>Download — seeksoultools  documentation</h1>
+            <div class="file-path">Source: seeksoul.seekgene.com/en/v1.3.0/0.download.html</div>
+            <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<section id="id1">
+<h1>Download<a class="headerlink" href="0.download.html#id1" title="Link to this heading"></a></h1>
+<p>SeekSoulTools - 1.3.0</p>
+<p><a class="reference external" href="https://seekgene-public.oss-cn-beijing.aliyuncs.com/software/seeksoultools/seeksoultools.1.3.0.tar.gz">Download-SeekSoulTools</a> - md5: 21b19d5f10022f0d8caf1a1a9c3f66c6</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio"/>
+<label class="sd-tab-label" for="sd-tab-item-0">
+wget</label><div class="sd-tab-content docutils">
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>wget<span class="w"> </span>-c<span class="w"> </span>-O<span class="w"> </span>seeksoultools.1.3.0.tar.gz<span class="w"> </span><span class="s2">"https://seekgene-public.oss-cn-beijing.aliyuncs.com/software/seeksoultools/seeksoultools.1.3.0.tar.gz"</span>
+</pre></div>
+</div>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio"/>
+<label class="sd-tab-label" for="sd-tab-item-1">
+curl</label><div class="sd-tab-content docutils">
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>-C<span class="w"> </span>-<span class="w"> </span>-o<span class="w"> </span>seeksoultools.1.3.0.tar.gz<span class="w"> </span><span class="s2">"https://seekgene-public.oss-cn-beijing.aliyuncs.com/software/seeksoultools/seeksoultools.1.3.0.tar.gz"</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+        </div>
+        
+
+        <div class="section" id="section-2">
+            <h1>Installation Guide — seeksoultools  documentation</h1>
+            <div class="file-path">Source: seeksoul.seekgene.com/en/v1.3.0/1.install.html</div>
+            <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<section id="id1">
+<h1>Installation Guide<a class="headerlink" href="1.install.html#id1" title="Link to this heading"></a></h1>
+<p>Installation:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="c1"> </span>
+tar<span class="w"> </span>zxf<span class="w"> </span>seeksoultools.1.3.0.tar.gz
+<span class="nb">cd</span><span class="w"> </span>seeksoultools.1.3.0
+<span class="c1"> </span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">PATH</span><span class="o">=</span><span class="sb">`</span><span class="nb">pwd</span><span class="sb">`</span>:<span class="nv">$PATH</span>
+<span class="nb">echo</span><span class="w"> </span><span class="s2">"export PATH=</span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span><span class="s2">:\$PATH"</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>~/.bashrc
+
+<span class="c1"># Initialization and installation verification</span>
+<span class="sb">`</span><span class="nb">pwd</span><span class="sb">`</span>/seeksoultools<span class="w"> </span>--version
+</pre></div>
+</div>
+</section>
+</div>
+</div>
+        </div>
+        
+
+        <div class="section" id="section-3">
+            <h1>Tutorials — seeksoultools  documentation</h1>
+            <div class="file-path">Source: seeksoul.seekgene.com/en/v1.3.0/2.tutorial.html</div>
+            <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<section id="id1">
+<h1>Tutorials<a class="headerlink" href="2.tutorial.html#id1" title="Link to this heading"></a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="2.tutorial/1.rna.html">rna module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="2.tutorial/1.rna/1.data.html">Data preparation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2.tutorial/1.rna/2.run.html">Run SeekSoulTools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2.tutorial/1.rna/3.output.html">Output descriptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2.tutorial/1.rna/4.description.html">Algorithms Overview</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="2.tutorial/2.fast.html">fast module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="2.tutorial/2.fast/1.data.html">Data preparation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2.tutorial/2.fast/2.run.html">Run SeekSoulTools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2.tutorial/2.fast/3.output.html">Output descriptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2.tutorial/2.fast/4.description.html">Algorithms Overview</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="2.tutorial/3.vdj.html">vdj module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="2.tutorial/3.vdj/1.data.html">Data preparation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2.tutorial/3.vdj/2.run.html">Run SeekSoulTools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2.tutorial/3.vdj/2.run.html#ref">Example of building a ref file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2.tutorial/3.vdj/3.output.html">Output descriptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2.tutorial/3.vdj/4.description.html">Algorithms Overview</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="2.tutorial/4.multivdj.html">multivdj module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="2.tutorial/4.multivdj/1.multivdj.html">multivdj</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="2.tutorial/0.utils.html">utils module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="2.tutorial/0.utils/1.addtag.html">addtag</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+</div>
+</div>
+        </div>
+        
+
+        <div class="section" id="section-4">
+            <h1>How to Build Reference Genome? — seeksoultools  documentation</h1>
+            <div class="file-path">Source: seeksoul.seekgene.com/en/v1.3.0/reference.html</div>
+            <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<section id="ref-label">
+<span id="id1"></span><h1>How to Build Reference Genome?<a class="headerlink" href="reference.html#ref-label" title="Link to this heading"></a></h1>
+<section id="id2">
+<h2>Preparing Files Required for Genome Construction<a class="headerlink" href="reference.html#id2" title="Link to this heading"></a></h2>
+<p>When using Seeksoultools software for transcriptome and whole sequence analysis, it is necessary to prepare the reference genome sequence and corresponding GTF annotation file for the species. The file format specifications are as follows:</p>
+<section id="id3">
+<h3>Genome Sequence<a class="headerlink" href="reference.html#id3" title="Link to this heading"></a></h3>
+<p>The genome sequence must be in FA format. The chromosome IDs must match the seqname in the first column of the GTF file, and the seqname in the GTF must be a subset of the chrom IDs in the FA file. Note that the file should not contain empty lines.</p>
+</section>
+<section id="gtf">
+<h3>GTF File<a class="headerlink" href="reference.html#gtf" title="Link to this heading"></a></h3>
+<p>The GTF file format specifications are as follows:</p>
+<ol class="arabic simple">
+<li><p>seqname: Sequence name, typically chromosome or Contig ID</p></li>
+<li><p>source: Annotation source, which can be a database name (e.g., RefSeq database) or software name (e.g., GeneScan prediction), or can be empty, filled with a dot (.)</p></li>
+<li><p>feature: Represents the feature type corresponding to the interval. Common types in GTF include: gene, transcript, CDS, exon, start_codon, stop_codon, etc.</p></li>
+<li><p>start: Starting position of the feature</p></li>
+<li><p>end: Ending position of the feature</p></li>
+<li><p>score: Represents the confidence level of feature existence and coordinates, can be a floating-point number or integer, "." indicates empty or not required</p></li>
+<li><p>strand: Indicates whether the feature is on the positive (+) or negative (-) strand of the reference genome</p></li>
+<li><p>frame: 0 indicates the first complete codon of the reading frame is at the 5' end, 1 indicates one extra base before the first complete codon, 2 indicates two extra bases before the first complete codon. Note that frame is not the remainder of CDS length divided by 3. If the strand is '-', the first base value of this region is 'end', as the corresponding coding region will be on the antisense strand from end to start</p></li>
+<li><p>attribute: Should have the format attributes_name "attributes_values"; each attribute must end with a semicolon and be separated from the next attribute by a space, and the attribute value must be enclosed in double quotes. Contains the following three attributes:</p></li>
+</ol>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>attribute</p></th>
+<th class="head"><p>Meaning</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>gene_id "value";</p></td>
+<td><p>Represents the unique ID of the gene locus where the transcript is located on the genome. gene_id and value are separated by a space. If the value is empty, it indicates no corresponding gene.</p></td>
+</tr>
+<tr class="row-odd"><td><p>transcript_id "value";</p></td>
+<td><p>Unique ID of the predicted transcript. transcript_id and value are separated by a space. Empty indicates no transcript.</p></td>
+</tr>
+<tr class="row-even"><td><p>gene_type "value";</p></td>
+<td><p>Biological type of the gene, such as protein coding, lncRNA, etc.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Notes for GTF file preparation:</p>
+<ul class="simple">
+<li><p>The feature column in the GTF file must include gene, transcript, and exon information for each gene;</p></li>
+<li><p>When the feature column is 'gene', the attributes column must include gene_id and gene_type. If there is no gene_name, the gene_id value will be used as the gene name. When the feature column is 'transcript', the attributes column must include transcript_id. When the feature column is 'exon', the attributes column must include exon_id, otherwise it will affect the processing when reads are annotated to multiple genes.</p></li>
+<li><p>The GTF file should not contain empty lines.</p></li>
+<li><p>In the GTF file, mitochondrial gene names must start with "Mt-" or "mt-", otherwise the mito section in the report will all be 0.</p></li>
+</ul>
+</section>
+</section>
+<section id="id4">
+<h2>Scenario 1: Building Reference Genome Compatible with Different Single-cell Data Platforms<a class="headerlink" href="reference.html#id4" title="Link to this heading"></a></h2>
+<p>If you have both 10X Genomics single-cell data and SeekOne™ product single-cell data, it is recommended to use <a class="reference external" href="https://support.10xgenomics.com/single-cell-gene-expression/software/downloads/latest">10X CellRanger</a> to build the reference genome. SeekSoulTools can be compatible with the reference genome built by CellRanger.</p>
+<p>Processing the gene annotation file (GTF file) is as follows:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>/path/to/cellranger<span class="w"> </span>mkgtf<span class="w"> </span>Homo_sapiens.GRCh38.ensembl.gtf<span class="w"> </span>Homo_sapiens.GRCh38.ensembl.filtered.gtf<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--attribute<span class="o">=</span>gene_biotype:protein_coding<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--attribute<span class="o">=</span>gene_biotype:lncRNA<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--attribute<span class="o">=</span>gene_biotype:antisense<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--attribute<span class="o">=</span>gene_biotype:IG_LV_gene<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--attribute<span class="o">=</span>gene_biotype:IG_V_gene<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--attribute<span class="o">=</span>gene_biotype:IG_V_pseudogene<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--attribute<span class="o">=</span>gene_biotype:IG_D_gene<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--attribute<span class="o">=</span>gene_biotype:IG_J_gene<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--attribute<span class="o">=</span>gene_biotype:IG_J_pseudogene<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--attribute<span class="o">=</span>gene_biotype:IG_C_gene<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--attribute<span class="o">=</span>gene_biotype:IG_C_pseudogene<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--attribute<span class="o">=</span>gene_biotype:TR_V_gene<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--attribute<span class="o">=</span>gene_biotype:TR_V_pseudogene<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--attribute<span class="o">=</span>gene_biotype:TR_D_gene<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--attribute<span class="o">=</span>gene_biotype:TR_J_gene<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--attribute<span class="o">=</span>gene_biotype:TR_J_pseudogene<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--attribute<span class="o">=</span>gene_biotype:TR_C_gene
+cellranger<span class="w"> </span>mkref<span class="w"> </span>--genome<span class="o">=</span>GRCh38<span class="w"> </span>--fasta<span class="o">=</span>GRCh38.fa<span class="w"> </span>--genes<span class="o">=</span>GRCh38-filtered-ensembl.gtf
+<span class="nb">cd</span><span class="w"> </span>GRCh38/genes
+gunzip<span class="w"> </span>-dc<span class="w"> </span>genes.gtf.gz<span class="w"> </span>&gt;<span class="w"> </span>genes.gtf
+</pre></div>
+</div>
+<p><strong>Note</strong>:</p>
+<ul class="simple">
+<li><p>When the reference genome built by cellranger is not compatible with the STAR version of SeekSoulTools, you can specify the STAR path of cellranger to SeekSoulTools, for example: <code class="docutils literal notranslate"><span class="pre">--star_path</span> <span class="pre">/path/to/cellranger-5.0.1/lib/bin/STAR</span></code>.</p></li>
+<li><p>The chromosome name in the fasta file must match the chromosome name in the gtf file. For example, if the chromosome name in the fasta file is <code class="docutils literal notranslate"><span class="pre">chr1</span></code>, then the chromosome name in the gtf file must also be <code class="docutils literal notranslate"><span class="pre">chr1</span></code>.</p></li>
+</ul>
+</section>
+<hr class="docutils"/>
+<section id="seekone">
+<h2>Scenario 2: Only SeekOne™ Product, No Need to Consider Platform Compatibility<a class="headerlink" href="reference.html#seekone" title="Link to this heading"></a></h2>
+<p>The code for building the STAR index is as follows:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>/demo/seeksoultools.1.2.0/bin/STAR<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--runMode<span class="w"> </span>genomeGenerate<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--runThreadN<span class="w"> </span><span class="m">16</span><span class="w"> </span><span class="se">\ </span><span class="w">                       </span>
+<span class="w">  </span>--genomeDir<span class="w"> </span>/path/to/star<span class="w"> </span><span class="se">\ </span><span class="w">            </span>
+<span class="w">  </span>--genomeFastaFiles<span class="w"> </span>/path/to/genome.fa<span class="w"> </span><span class="se">\ </span><span class="w"> </span>
+<span class="w">  </span>--sjdbGTFfile<span class="w"> </span>/path/to/genome.gtf<span class="w"> </span><span class="se">\ </span><span class="w">     </span>
+<span class="w">  </span>--sjdbOverhang<span class="w"> </span><span class="m">149</span><span class="w"> </span><span class="se">\ </span><span class="w">                    </span>
+<span class="w">  </span>--limitGenomeGenerateRAM<span class="w"> </span><span class="m">17179869184</span><span class="w">     </span>
+</pre></div>
+</div>
+<p><strong>Note</strong>:</p>
+<ul class="simple">
+<li><p>The chromosome name in the fasta file must match the chromosome name in the gtf file. For example, if the chromosome name in the fasta file is <code class="docutils literal notranslate"><span class="pre">chr1</span></code>, then the chromosome name in the gtf file must also be <code class="docutils literal notranslate"><span class="pre">chr1</span></code>.</p></li>
+</ul>
+</section>
+</section>
+</div>
+</div>
+        </div>
+        
+
+        <div class="section" id="section-5">
+            <h1>FAQ — seeksoultools  documentation</h1>
+            <div class="file-path">Source: seeksoul.seekgene.com/en/v1.3.0/faq.html</div>
+            <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<section id="id1">
+<h1>FAQ<a class="headerlink" href="faq.html#id1" title="Link to this heading"></a></h1>
+<section id="id2">
+<h2>How to build reference genome?<a class="headerlink" href="faq.html#id2" title="Link to this heading"></a></h2>
+<p>The assembly of the reference genome refers to<a class="reference internal" href="reference.html#ref-label"><span class="std std-ref">How to build reference genome?</span></a>。</p>
+</section>
+</section>
+</div>
+</div>
+        </div>
+        
+
+        <div class="section" id="section-6">
+            <h1>Release Notes — seeksoultools  documentation</h1>
+            <div class="file-path">Source: seeksoul.seekgene.com/en/v1.3.0/release.html</div>
+            <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<section id="id1">
+<h1>Release Notes<a class="headerlink" href="release.html#id1" title="Link to this heading"></a></h1>
+<section id="v1-3-0">
+<h2>v1.3.0<a class="headerlink" href="release.html#v1-3-0" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Update the algorithm for the V(D)J module.</p></li>
+<li><p>The output path names have been standardized.</p></li>
+<li><p>In the FAST and FFPE modules, the 17 base  with low-quality bases are removed following the extraction of Reads1 UMI.</p></li>
+</ul>
+</section>
+<section id="v1-2-2">
+<h2>v1.2.2<a class="headerlink" href="release.html#v1-2-2" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Add vdj analysis module</p></li>
+<li><p>Support for FFPE samples in the fast module</p></li>
+<li><p>Fix the statistical error in gene median calculation caused by missing lncRNA type in the GTF file.</p></li>
+<li><p>Resolve the issue of missing Ensembl IDs for differentially expressed genes due to gene name duplication.</p></li>
+<li><p>Other improvements to enhance usability.</p></li>
+</ul>
+</section>
+<section id="v1-2-1">
+<h2>v1.2.1<a class="headerlink" href="release.html#v1-2-1" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Update the style of the report</p></li>
+<li><p>Add trimming for SP1, SP2, TSO, and adapters</p></li>
+<li><p>Add tool for adding tags to BAM files</p></li>
+<li><p>Enhance support for non-standard GTF files</p></li>
+<li><p>Enhance the FAST module to include support for species other than human and mouse</p></li>
+</ul>
+</section>
+<section id="v1-2-0">
+<h2>v1.2.0<a class="headerlink" href="release.html#v1-2-0" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Add output of read1 fastq file after removing barcode and UMI sequences</p></li>
+<li><p>Add fast analysis module</p></li>
+<li><p>Apply UMI-tools correction method</p></li>
+<li><p>Update rules for handling annotations of multiple genes in reads: When there is a unique exon annotation, consider the read as valid</p></li>
+</ul>
+</section>
+<section id="v1-0-0">
+<h2>v1.0.0<a class="headerlink" href="release.html#v1-0-0" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Initial release</p></li>
+</ul>
+</section>
+</section>
+</div>
+</div>
+        </div>
+        
+
+        <div class="section" id="section-7">
+            <h1>Search — seeksoultools  documentation</h1>
+            <div class="file-path">Source: seeksoul.seekgene.com/en/v1.3.0/search.html</div>
+            <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<noscript>
+<div class="admonition warning" id="fallback">
+<p class="last">
+      Please activate JavaScript to enable the search functionality.
+    </p>
+</div>
+</noscript>
+<div id="search-results">
+</div>
+</div>
+</div>
+        </div>
+        
+
+        <div class="section" id="section-8">
+            <h1>Index — seeksoultools  documentation</h1>
+            <div class="file-path">Source: seeksoul.seekgene.com/en/v1.3.0/genindex.html</div>
+            <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<h1 id="index">Index</h1>
+<div class="genindex-jumpbox">
+</div>
+</div>
+</div>
+        </div>
+        
+
+        <div class="section" id="section-9">
+            <h1>utils module — seeksoultools  documentation</h1>
+            <div class="file-path">Source: seeksoul.seekgene.com/en/v1.3.0/2.tutorial/0.utils.html</div>
+            <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<section id="utils">
+<span id="utils-label"></span><h1>utils module<a class="headerlink" href="0.utils.html#utils" title="Link to this heading"></a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="0.utils/1.addtag.html">addtag</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="0.utils/1.addtag.html#id1">Run tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="0.utils/1.addtag.html#id2">Parameter descriptions</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+</div>
+</div>
+        </div>
+        
+
+        <div class="section" id="section-10">
+            <h1>multivdj module — seeksoultools  documentation</h1>
+            <div class="file-path">Source: seeksoul.seekgene.com/en/v1.3.0/2.tutorial/4.multivdj.html</div>
+            <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<section id="multivdj">
+<span id="multivdj-label"></span><h1>multivdj module<a class="headerlink" href="4.multivdj.html#multivdj" title="Link to this heading"></a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="4.multivdj/1.multivdj.html">multivdj</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="4.multivdj/1.multivdj.html#id1">Run SeekSoulTools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4.multivdj/1.multivdj.html#id2">Parameter descriptions</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+</div>
+</div>
+        </div>
+        
+
+        <div class="section" id="section-11">
+            <h1>rna module — seeksoultools  documentation</h1>
+            <div class="file-path">Source: seeksoul.seekgene.com/en/v1.3.0/2.tutorial/1.rna.html</div>
+            <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<section id="rna">
+<span id="rna-label"></span><h1>rna module<a class="headerlink" href="1.rna.html#rna" title="Link to this heading"></a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="1.rna/1.data.html">Data preparation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="1.rna/1.data.html#id2">Download sample datasets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1.rna/1.data.html#id3">Download and build reference genome</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="1.rna/2.run.html">Run SeekSoulTools</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="1.rna/2.run.html#id2">Run tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1.rna/2.run.html#id3">Parameter descriptions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="1.rna/3.output.html">Output descriptions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1.rna/4.description.html">Algorithms Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="1.rna/4.description.html#step1-barcode-umi">step1: barcode/UMI extraction</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="1.rna/4.description.html#id2">Structure design and description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="1.rna/4.description.html#id3">Workflow</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="1.rna/4.description.html#anchor">Anchor determination</a></li>
+<li class="toctree-l4"><a class="reference internal" href="1.rna/4.description.html#barcodelinker">Barcode and linker correction</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="1.rna/4.description.html#polya">Adaptors and polyA sequence trimming</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="1.rna/4.description.html#step2">step2: Alignment</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="1.rna/4.description.html#id4">Sequence Alignment</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="1.rna/4.description.html#step3">step3: Counting</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="1.rna/4.description.html#umi">UMI counting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="1.rna/4.description.html#id5">UMI correction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="1.rna/4.description.html#id6">Cell calling</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="1.rna/4.description.html#step4">step4: Downstream analysis</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="1.rna/4.description.html#seurat">Seurat analysis</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+</div>
+</div>
+        </div>
+        
+
+        <div class="section" id="section-12">
+            <h1>fast module — seeksoultools  documentation</h1>
+            <div class="file-path">Source: seeksoul.seekgene.com/en/v1.3.0/2.tutorial/2.fast.html</div>
+            <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<section id="fast">
+<span id="fast-label"></span><h1>fast module<a class="headerlink" href="2.fast.html#fast" title="Link to this heading"></a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="2.fast/1.data.html">Data preparation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="2.fast/1.data.html#id2">Download sample datasets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2.fast/1.data.html#id3">Download and assembly of reference genome</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="2.fast/2.run.html">Run SeekSoulTools</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="2.fast/2.run.html#id2">Run tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2.fast/2.run.html#id3">Parameter descriptions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="2.fast/3.output.html">Output descriptions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2.fast/4.description.html">Algorithms Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="2.fast/4.description.html#step1-barcode-umi">step1: barcode/UMI extraction</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="2.fast/4.description.html#id2">Structure design and description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="2.fast/4.description.html#id3">Workflow</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="2.fast/4.description.html#barcode">Barcode and linker correction</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="2.fast/4.description.html#polya">Adaptors and polyA sequence trimming</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="2.fast/4.description.html#step2">step2: Alignment</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="2.fast/4.description.html#id4">Sequence Alignment</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="2.fast/4.description.html#step3">step3: Counting</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="2.fast/4.description.html#umi">UMI counting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="2.fast/4.description.html#id5">UMI correction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="2.fast/4.description.html#id6">Cell calling</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="2.fast/4.description.html#step4">step4: Downstream analysis</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="2.fast/4.description.html#seurat">Seurat analysis</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+</div>
+</div>
+        </div>
+        
+
+        <div class="section" id="section-13">
+            <h1>vdj module — seeksoultools  documentation</h1>
+            <div class="file-path">Source: seeksoul.seekgene.com/en/v1.3.0/2.tutorial/3.vdj.html</div>
+            <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<section id="vdj">
+<span id="vdj-label"></span><h1>vdj module<a class="headerlink" href="3.vdj.html#vdj" title="Link to this heading"></a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="3.vdj/1.data.html">Data preparation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="3.vdj/1.data.html#id2">Download sample datasets</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="3.vdj/2.run.html">Run SeekSoulTools</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="3.vdj/2.run.html#id2">Run tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3.vdj/2.run.html#id3">Parameter descriptions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="3.vdj/2.run.html#ref">Example of building a ref file</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="3.vdj/2.run.html#trust4-imgtref">Approach One: Utilize the trust4 software to retrieve data from the IMGT database and construct the required reference sequences.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3.vdj/2.run.html#genes-gtfbcr-tcr">Approach Two: If the gene names in the genes.gtf file do not encompass the required BCR/TCR gene names, configure them independently.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3.vdj/2.run.html#leader">Prepare the leader file.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3.vdj/2.run.html#cfg">Write into the cfg file.</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="3.vdj/3.output.html">Output descriptions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3.vdj/4.description.html">Algorithms Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="3.vdj/4.description.html#barcode-umi">barcode/UMI extraction</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="3.vdj/4.description.html#id2">Structure design and description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="3.vdj/4.description.html#id3">Workflow</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="3.vdj/4.description.html#barcode">Barcode and linker correction</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="3.vdj/4.description.html#vdj">Statistics on the proportion of VDJ gene</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3.vdj/4.description.html#id4">Sequence Assembly</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3.vdj/4.description.html#id5">VDJ annotation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3.vdj/4.description.html#clonotype">Calculation Clonotype</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+</div>
+</div>
+        </div>
+        
+
+        <div class="section" id="section-14">
+            <h1>Output descriptions — seeksoultools  documentation</h1>
+            <div class="file-path">Source: seeksoul.seekgene.com/en/v1.3.0/2.tutorial/3.vdj/3.output.html</div>
+            <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<section id="id1">
+<h1>Output descriptions<a class="headerlink" href="3.output.html#id1" title="Link to this heading"></a></h1>
+<p>Here’s the output directory structure: each line represents a file or folder, indicated by “├──”.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>.
+├──<span class="w"> </span>Analysis
+│<span class="w">   </span>├──<span class="w"> </span>dandelion
+│<span class="w">   </span>├──<span class="w"> </span>qc
+│<span class="w">   </span>├──<span class="w"> </span>summary.json
+│<span class="w">   </span>└──<span class="w"> </span>trust4
+└──<span class="w"> </span>Outs
+<span class="w">    </span>├──<span class="w"> </span>demo_TCR_airr_rearrangement.tsv<span class="w">               </span>AIRR<span class="w"> </span>format<span class="w"> </span>result<span class="w"> </span>file
+<span class="w">    </span>├──<span class="w"> </span>demo_TCR_filtered_contig_annotations.tsv<span class="w">      </span>Annotation<span class="w"> </span>results<span class="w"> </span><span class="k">for</span><span class="w"> </span>filtered<span class="w"> </span>contigs
+<span class="w">    </span>├──<span class="w"> </span>demo_TCR_cell_barcodes.json<span class="w">                   </span>All<span class="w"> </span>barcode<span class="w"> </span><span class="k">for</span><span class="w"> </span>filtered<span class="w"> </span>contigs
+<span class="w">    </span>├──<span class="w"> </span>demo_TCR_clonotypes.tsv<span class="w">                       </span>Clonotype<span class="w"> </span>clustering<span class="w"> </span>information
+<span class="w">    </span>├──<span class="w"> </span>demo_TCR_consensus.fasta<span class="w">                      </span>Consensus<span class="w"> </span>sequences<span class="w"> </span><span class="k">in</span><span class="w"> </span>FASTA<span class="w"> </span>format<span class="w"> </span>per<span class="w"> </span>clonotype<span class="w"> </span>chain
+<span class="w">    </span>├──<span class="w"> </span>demo_TCR_filtered_contig.fasta<span class="w">                </span>FASTA<span class="w"> </span>sequences<span class="w"> </span>of<span class="w"> </span>filtered<span class="w"> </span>assembled<span class="w"> </span>contigs
+<span class="w">    </span>├──<span class="w"> </span>demo_TCR_report.html<span class="w">                          </span>Analysis<span class="w"> </span>report
+<span class="w">    </span>└──<span class="w"> </span>metrics_summary.csv<span class="w">                           </span>Quality<span class="w"> </span>control<span class="w"> </span>metrics<span class="w"> </span>summary<span class="w"> </span>file
+</pre></div>
+</div>
+</section>
+</div>
+</div>
+        </div>
+        
+
+        <div class="section" id="section-15">
+            <h1>Algorithms Overview — seeksoultools  documentation</h1>
+            <div class="file-path">Source: seeksoul.seekgene.com/en/v1.3.0/2.tutorial/3.vdj/4.description.html</div>
+            <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<section id="id1">
+<h1>Algorithms Overview<a class="headerlink" href="4.description.html#id1" title="Link to this heading"></a></h1>
+<section id="barcode-umi">
+<h2>barcode/UMI extraction<a class="headerlink" href="4.description.html#barcode-umi" title="Link to this heading"></a></h2>
+<p>SeekSoulTools is able to extract the barcode and UMI sequences based on different Read1 structures. The pipeline processes the barcodes and filters Read1 and its corresponding Read2, and an updated fastq file is generated at the end of step 1.</p>
+<section id="id2">
+<h3>Structure design and description<a class="headerlink" href="4.description.html#id2" title="Link to this heading"></a></h3>
+<ul>
+<li><p>Barcode and UMI descriptions: Describing the basic structure of Read1 using letters and numbers, where the letters represent the meaning of the nucleotides and the numbers represent the length of the nucleotides.</p>
+<p>B: barcode bases <br/> L: linker bases <br/> U: UMI bases <br/> X: other arbitrary bases used as placeholders <br/></p>
+</li>
+</ul>
+<p>The Read1 structure of the SeekOne™ DD Single Cell Immune Profiling Kit is B17U12:  <br/> <img alt="DD" src="../../_images/DD2.png"/></p>
+</section>
+<section id="id3">
+<h3>Workflow<a class="headerlink" href="4.description.html#id3" title="Link to this heading"></a></h3>
+<section id="barcode">
+<h4>Barcode and linker correction<a class="headerlink" href="4.description.html#barcode" title="Link to this heading"></a></h4>
+<p>After determining the starting position of the barcode, the corresponding sequence is extracted based on the structural design. When the extracted barcode sequence is found in the whitelist, it is considered a <strong>valid barcode</strong> and the read count with valid barcodes is recorded. When the barcode is not found in the whitelist, it is considered an <strong>invalid barcode</strong></p>
+<p>During sequencing process, there is a certain probability that sequencing error occurs. With the presense of a whitelist, SeekSoulTools are able to do barcode correction. When correction is enabled, if sequences that are one base differ (one humming distance apart) from the invalid barcode appear in the whitelist, we will consider the following circumstances:</p>
+<ul class="simple">
+<li><p>If there is one and only sequence exists in the whitelist, we will correct the invalid barcode to the barcode in the whitelist.</p></li>
+<li><p>If multiple sequences exist in the whitelist, we will correct the invalid barcode to the sequence with the highest read support.</p></li>
+</ul>
+<p>After the processing procedure described above, the metrics is shown below:</p>
+<ul class="simple">
+<li><p>total: Total reads</p></li>
+<li><p>valid:  Number of reads without correction and number of successfully corrected reads</p></li>
+<li><p>Q30 Bases in Barcode: The q30 ratio of the barcode sequence</p></li>
+<li><p>Q30 Bases in UMI: The q30 ratio of the UMI sequence</p></li>
+<li><p>Q30 Bases in R2 Read: The q30 ratio of reads 2</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="vdj">
+<h2>Statistics on the proportion of VDJ gene<a class="headerlink" href="4.description.html#vdj" title="Link to this heading"></a></h2>
+<p>Construct STAR index based on ref and compare reads, count the number of TRA, TRB, TRD or IGK, IGL, IGH and the corresponding ratio based on bam files</p>
+</section>
+<section id="id4">
+<h2>Sequence Assembly<a class="headerlink" href="4.description.html#id4" title="Link to this heading"></a></h2>
+<p>1、Use the fastq-extractor module of trust4 to extract the reads that may contain TCR/BCR sequences, and then do downsample for each barcode, and only take the first 80,000 reads for cells with more than 80,000 reads.<br/>2、According to the barcode, filter out the umi that support reads less than n50, and then use umitools to correct the umi.<br/>3、Based on the above reads were assembled with trust4.<br/>Please refer to <a class="reference external" href="https://github.com/liulab-dfci/TRUST4">trust4</a> for detailed description.</p>
+</section>
+<section id="id5">
+<h2>VDJ annotation<a class="headerlink" href="4.description.html#id5" title="Link to this heading"></a></h2>
+<p>The annotator of trust4 was utilized for the annotation of VDJC genes and CDR3 positions.For the case of multiple annotations for per chain in per cell, the contig with the highest umi value was selected as the primary_chain.The UMI count is calculated based on the reads information of each contig, with a filtering step performed before counting: when the same UMI is used for multiple contig assemblies, these contigs are sorted by reads in descending order. If the ratio of reads between the second highest contig and the highest contig is less than 0.15, that UMI is only counted for the highest contig, and no UMI counting is performed for the others.</p>
+</section>
+<section id="clonotype">
+<h2>Calculation Clonotype<a class="headerlink" href="4.description.html#clonotype" title="Link to this heading"></a></h2>
+<p>1. Select contigs that meet chain requirements; filter out contigs with 1-UMI/reads ratio less than 0.94; remove cells where the sum of UMIs supporting the contigs is less than 3.<br/>
+2. If 5' matrix information is provided, take the intersection of cell barcodes.<br/>
+3. Utilize dandelion to determine clones based on CDR3 amino acid sequence similarity, with similarity thresholds set at 85% for BCR and 100% for TCR. For detailed criteria, refer to:：<a class="reference external" href="https://sc-dandelion.readthedocs.io/en/latest/notebooks/3_dandelion_findingclones-10x_data.html#Finding-clones">sc-dandelion</a><br/>
+4. For single-chain clonotypes, identify all other contigs sharing the same VJ genes and CDR3 amino acid sequence. Calculate a threshold as 1% of the n50 UMI count of these contigs. Discard the single-chain if its UMI count falls below this threshold.<br/>
+5. For the retained single-chain clonotypes, identify all dual-chain clonotypes sharing the same VJ genes and CDR3 amino acid sequence. Sort by cell count. If the ratio of cell counts between the second largest and the largest dual-chain clonotype is less than 0.15, merge the single-chain clonotype into the largest dual-chain clonotype; otherwise, maintain them separately. <br/>
+6. Sort by new clonotypes based on cell counts, generate new clone IDs, and provide exact IDs.</p>
+</section>
+</section>
+</div>
+</div>
+        </div>
+        
+
+        <div class="section" id="section-16">
+            <h1>Run SeekSoulTools — seeksoultools  documentation</h1>
+            <div class="file-path">Source: seeksoul.seekgene.com/en/v1.3.0/2.tutorial/3.vdj/2.run.html</div>
+            <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<section id="id1">
+<h1>Run SeekSoulTools<a class="headerlink" href="2.run.html#id1" title="Link to this heading"></a></h1>
+<section id="id2">
+<h2>Run tests<a class="headerlink" href="2.run.html#id2" title="Link to this heading"></a></h2>
+<p>Example 1: T cell receptor analysis example</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>seeksoultools<span class="w"> </span>vdj<span class="w"> </span>run<span class="w"> </span><span class="se">\</span>
+--fq1<span class="w"> </span>/path/to/demo_tcr/demo_tcr_R1.fq.gz<span class="w"> </span><span class="se">\</span>
+--fq2<span class="w"> </span>/path/to/demo_tcr/demo_tcr_R2.fq.gz<span class="w"> </span><span class="se">\</span>
+--samplename<span class="w"> </span>demo_tcr<span class="w"> </span><span class="se">\</span>
+--chain<span class="w"> </span>TR<span class="w"> </span><span class="se">\</span>
+--core<span class="w"> </span><span class="m">16</span><span class="w">  </span><span class="se">\</span>
+--outdir<span class="w"> </span>/path/to/ouput/demo_tcr<span class="w"> </span><span class="se">\</span>
+--organism<span class="w"> </span>human
+</pre></div>
+</div>
+<p>Example 2: B cell receptor analysis example</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>seeksoultools<span class="w"> </span>vdj<span class="w"> </span>run<span class="w"> </span><span class="se">\</span>
+--fq1<span class="w"> </span>/path/to/demo_bcr/demo_bcr_R1.fq.gz<span class="w"> </span><span class="se">\</span>
+--fq2<span class="w"> </span>/path/to/demo_bcr/demo_bcr_R2.fq.gz<span class="w"> </span><span class="se">\</span>
+--samplename<span class="w"> </span>demo_bcr<span class="w"> </span><span class="se">\</span>
+--chain<span class="w"> </span>IG<span class="w"> </span><span class="se">\</span>
+--core<span class="w"> </span><span class="m">16</span><span class="w">  </span><span class="se">\</span>
+--outdir<span class="w"> </span>/path/to/ouput/demo_bcr<span class="w"> </span><span class="se">\</span>
+--organism<span class="w"> </span>human
+</pre></div>
+</div>
+</section>
+<section id="id3">
+<h2>Parameter descriptions<a class="headerlink" href="2.run.html#id3" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Parameters</p></th>
+<th class="head"><p>Descriptions</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>–fq1</p></td>
+<td><p>Paths to R1 fastq files.</p></td>
+</tr>
+<tr class="row-odd"><td><p>–fq2</p></td>
+<td><p>Paths to R2 fastq files.</p></td>
+</tr>
+<tr class="row-even"><td><p>–samplename</p></td>
+<td><p>Sample name. Only digits, letters, and underscores are supported</p></td>
+</tr>
+<tr class="row-odd"><td><p>–organism</p></td>
+<td><p>organism, Available options: human，mouse</p></td>
+</tr>
+<tr class="row-even"><td><p>–chain</p></td>
+<td><p>chain type,  Available options: IG and TR. IG for B clel receptor and TR for T cell receptor.</p></td>
+</tr>
+<tr class="row-odd"><td><p>–core</p></td>
+<td><p>Number of threads used for the analysis</p></td>
+</tr>
+<tr class="row-even"><td><p>–outdir</p></td>
+<td><p>Output directory. Absolute path, and ensure that the outdir for each task is unique.</p></td>
+</tr>
+<tr class="row-odd"><td><p>–cfg</p></td>
+<td><p>When the species is not human or mouse, the ref file needs to be configured by itself, and the file that records three REFs is the value of the parameter.</p></td>
+</tr>
+<tr class="row-even"><td><p>–read_pair</p></td>
+<td><p>Whether or not  to use paired reads to do the assembly, defaults to False.</p></td>
+</tr>
+<tr class="row-odd"><td><p>–keep_tmp</p></td>
+<td><p>Whether to keep the intermediate files of trust4, the default is not to keep them, when this parameter is specified, these intermediate files are compressed.</p></td>
+</tr>
+<tr class="row-even"><td><p>–matrix</p></td>
+<td><p>rna matrix data. If this parameter is specified, the intersection of the barcode of vdj and matrix is taken before find clone, and the path to the filter matrix of the rna data is specified if required</p></td>
+</tr>
+<tr class="row-odd"><td><p>–rna_wd</p></td>
+<td><p>When analyzing RNA data, if this parameter is specified along with the –matrix parameter, a combined websummary for RNA and VDJ will be generated. When specifying this parameter, please ensure that the sample names for RNA and VDJ are consistent.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="ref">
+<h1>Example of building a ref file<a class="headerlink" href="2.run.html#ref" title="Link to this heading"></a></h1>
+<section id="trust4-imgtref">
+<h2>Approach One: Utilize the trust4 software to retrieve data from the IMGT database and construct the required reference sequences.<a class="headerlink" href="2.run.html#trust4-imgtref" title="Link to this heading"></a></h2>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>BuildImgtAnnot.pl<span class="w"> </span>Homo_sapien<span class="w"> </span>&gt;<span class="w"> </span>IMGT+C.fa
+grep<span class="w"> </span><span class="s2">"&gt;"</span><span class="w"> </span>IMGT+C.fa<span class="w"> </span><span class="p">|</span><span class="w"> </span>cut<span class="w"> </span>-f2<span class="w"> </span>-d<span class="s1">'&gt;'</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>cut<span class="w"> </span>-f1<span class="w"> </span>-d<span class="s1">'*'</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sort<span class="w"> </span><span class="p">|</span><span class="w"> </span>uniq<span class="w"> </span>&gt;<span class="w"> </span>bcr_tcr_gene_name.txt
+BuildDatabaseFa.pl<span class="w"> </span>refdata-GRCh38/fasta/genome.fa<span class="w"> </span>refdata-GRCh38/genes/genes.gtf<span class="w"> </span>bcr_tcr_gene_name.txt<span class="w"> </span>&gt;<span class="w"> </span>bcrtcr.fa
+</pre></div>
+</div>
+</section>
+<section id="genes-gtfbcr-tcr">
+<h2>Approach Two: If the gene names in the genes.gtf file do not encompass the required BCR/TCR gene names, configure them independently.<a class="headerlink" href="2.run.html#genes-gtfbcr-tcr" title="Link to this heading"></a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">### Retrieve all species sequences from the IMGT database</span>
+<span class="n">wget</span> <span class="o">-</span><span class="n">c</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">imgt</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">download</span><span class="o">/</span><span class="n">GENE</span><span class="o">-</span><span class="n">DB</span><span class="o">/</span><span class="n">IMGTGENEDB</span><span class="o">-</span><span class="n">ReferenceSequences</span><span class="o">.</span><span class="n">fasta</span><span class="o">-</span><span class="n">nt</span><span class="o">-</span><span class="n">WithGaps</span><span class="o">-</span><span class="n">F</span><span class="o">+</span><span class="n">ORF</span><span class="o">+</span><span class="n">inframeP</span>
+
+<span class="c1">### Extract the required sequences based on the species information in the ID and format them according to the requirements of TRUST4.</span>
+<span class="kn">from</span> <span class="nn">Bio</span> <span class="kn">import</span> <span class="n">SeqIO</span>
+<span class="kn">from</span> <span class="nn">Bio.SeqRecord</span> <span class="kn">import</span> <span class="n">SeqRecord</span>
+<span class="kn">from</span> <span class="nn">Bio.Seq</span> <span class="kn">import</span> <span class="n">Seq</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"IMGTGENEDB-ReferenceSequences.fasta-nt-WithGaps-F+ORF+inframeP"</span><span class="p">,</span> <span class="s2">"r"</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">,</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'IMGT+C.fa'</span><span class="p">,</span> <span class="s1">'w'</span><span class="p">)</span> <span class="k">as</span> <span class="n">out</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">record</span> <span class="ow">in</span> <span class="n">SeqIO</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="s2">"fasta"</span><span class="p">):</span>
+        <span class="c1">#if "IG" not in record.description and "TR" not in record.description:</span>
+        <span class="k">if</span> <span class="s1">'Bos taurus_Holstein'</span> <span class="ow">in</span> <span class="n">record</span><span class="o">.</span><span class="n">description</span><span class="p">:</span>
+            <span class="n">new_id</span> <span class="o">=</span> <span class="n">record</span><span class="o">.</span><span class="n">description</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">'|'</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+            <span class="n">new_seq</span> <span class="o">=</span> <span class="n">record</span><span class="o">.</span><span class="n">seq</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+            <span class="n">new_record</span> <span class="o">=</span> <span class="n">SeqRecord</span><span class="p">(</span><span class="n">Seq</span><span class="p">(</span><span class="n">new_seq</span><span class="p">),</span> <span class="nb">id</span><span class="o">=</span><span class="n">new_id</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">""</span><span class="p">)</span>
+            <span class="n">SeqIO</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">new_record</span><span class="p">,</span> <span class="n">out</span><span class="p">,</span> <span class="s2">"fasta"</span><span class="p">)</span>
+
+</pre></div>
+</div>
+</section>
+<section id="leader">
+<h2>Prepare the leader file.<a class="headerlink" href="2.run.html#leader" title="Link to this heading"></a></h2>
+<p>Download “”L-PART1+L-PART2” from <a class="reference external" href="https://www.imgt.org/vquest/refseqh.html#LEADER-sets">IMGT</a>.</p>
+<ul class="simple">
+<li><p>Separate downloads for IG and TR are required, with IG and TR sequences being saved as two different files</p></li>
+<li><p>Download IGH, IGK, and IGL separately, and then merge them into a single file.</p></li>
+<li><p>Download TRA and TRB separately, and then merge them into a single file.</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cat</span> <span class="n">IG_L</span><span class="o">-</span><span class="n">PART1</span><span class="o">+</span><span class="n">L</span><span class="o">-</span><span class="n">PART2</span><span class="o">.</span><span class="n">fa</span> <span class="o">|</span><span class="n">awk</span> <span class="s1">'/^&gt;/ {print; next} {printf "</span><span class="si">%s</span><span class="s1">", toupper($0)}'</span> <span class="o">|</span> <span class="n">awk</span> <span class="s1">'BEGIN{RS="&gt;"; FS="</span><span class="se">\n</span><span class="s1">"} NR&gt;1 {print "&gt;" $1 "</span><span class="se">\n</span><span class="s1">" $2}'</span>
+</pre></div>
+</div>
+</section>
+<section id="cfg">
+<h2>Write into the cfg file.<a class="headerlink" href="2.run.html#cfg" title="Link to this heading"></a></h2>
+<p>The format of the cfg file is as follows: <br/> fa:"/your/path/bcrtcr.fa" <br/> ref:"/your/path/IMGT+C.fa" <br/> leader:"/your/path/IG_L-PART1+L-PART2.fa"</p>
+<ul class="simple">
+<li><p>If the reference (ref) information is configured through Approach Two, both the fa and ref can be specified as IMGT+C.fa.</p></li>
+</ul>
+</section>
+</section>
+</div>
+</div>
+        </div>
+        
+
+        <div class="section" id="section-17">
+            <h1>Data preparation — seeksoultools  documentation</h1>
+            <div class="file-path">Source: seeksoul.seekgene.com/en/v1.3.0/2.tutorial/3.vdj/1.data.html</div>
+            <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<section id="id1">
+<h1>Data preparation<a class="headerlink" href="1.data.html#id1" title="Link to this heading"></a></h1>
+<section id="id2">
+<h2>Download sample datasets<a class="headerlink" href="1.data.html#id2" title="Link to this heading"></a></h2>
+<p><a class="reference external" href="https://seekgene-public.oss-cn-beijing.aliyuncs.com/software/data/demodata/PBMC_xin.tar">sample datasets</a> - md5: afbd2deac59b581a4d44a0f73655d71d（Species: Homo sapiens.）</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio"/>
+<label class="sd-tab-label" for="sd-tab-item-0">
+wget</label><div class="sd-tab-content docutils">
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>wget<span class="w"> </span>-c<span class="w"> </span>-O<span class="w"> </span>PBMC_xin.tar<span class="w"> </span><span class="s2">"https://seekgene-public.oss-cn-beijing.aliyuncs.com/software/data/demodata/PBMC_xin.tar"</span>
+<span class="c1"># decompress</span>
+tar<span class="w"> </span>xf<span class="w"> </span>PBMC.tar
+</pre></div>
+</div>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio"/>
+<label class="sd-tab-label" for="sd-tab-item-1">
+curl</label><div class="sd-tab-content docutils">
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>-C<span class="w"> </span>-<span class="w"> </span>-o<span class="w"> </span>PBMC_xin.tar<span class="w"> </span><span class="s2">"https://seekgene-public.oss-cn-beijing.aliyuncs.com/software/data/demodata/PBMC_xin.tar"</span>
+<span class="c1"># decompress</span>
+tar<span class="w"> </span>xf<span class="w"> </span>PBMC.tar
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+</div>
+</div>
+        </div>
+        
+
+        <div class="section" id="section-18">
+            <h1>Output descriptions — seeksoultools  documentation</h1>
+            <div class="file-path">Source: seeksoul.seekgene.com/en/v1.3.0/2.tutorial/1.rna/3.output.html</div>
+            <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<section id="id1">
+<h1>Output descriptions<a class="headerlink" href="3.output.html#id1" title="Link to this heading"></a></h1>
+<p>Here’s the output directory structure: each line represents a file or folder, indicated by “├──”, and the numbers indicate three important output files.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>./
+├──<span class="w"> </span>demo_report.html<span class="w">                          </span><span class="m">1</span>
+├──<span class="w"> </span>demo_summary.csv<span class="w">                          </span><span class="m">2</span>
+├──<span class="w"> </span>demo_summary.json<span class="w">                    </span>
+├──<span class="w"> </span>step1<span class="w">                                </span>
+│<span class="w">   </span>└──demo_2.fq.gz<span class="w">                      </span>
+├──<span class="w"> </span>step2<span class="w">                               </span>
+│<span class="w">   </span>├──<span class="w"> </span>featureCounts<span class="w">                   </span>
+│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>demo_SortedByName.bam<span class="w">      </span>
+│<span class="w">   </span>└──<span class="w"> </span>STAR<span class="w">                            </span>
+│<span class="w">       </span>├──<span class="w"> </span>demo_Log.final.out<span class="w">          </span>
+│<span class="w">       </span>└──<span class="w"> </span>demo_SortedByCoordinate.bam<span class="w">  </span>
+├──<span class="w"> </span>step3
+│<span class="w">   </span>├──<span class="w"> </span>filtered_feature_bc_matrix<span class="w">            </span><span class="m">3</span>
+│<span class="w">   </span>└──<span class="w"> </span>raw_feature_bc_matrix<span class="w">          </span>
+└──step4<span class="w">                                </span>
+<span class="w">    </span>├──<span class="w"> </span>FeatureScatter.png<span class="w">              </span>
+<span class="w">    </span>├──<span class="w"> </span>FindAllMarkers.xls<span class="w">               </span>
+<span class="w">    </span>├──<span class="w"> </span>mito_quantile.xls<span class="w">               </span>
+<span class="w">    </span>├──<span class="w"> </span>nCount_quantile.xls<span class="w">             </span>
+<span class="w">    </span>├──<span class="w"> </span>nFeature_quantile.xls<span class="w">           </span>
+<span class="w">    </span>├──<span class="w"> </span>resolution.xls<span class="w">                   </span>
+<span class="w">    </span>├──<span class="w"> </span>top10_heatmap.png<span class="w">               </span>
+<span class="w">    </span>├──<span class="w"> </span>tsne.png<span class="w">                         </span>
+<span class="w">    </span>├──<span class="w"> </span>tsne_umi.png<span class="w">                    </span>
+<span class="w">    </span>├──<span class="w"> </span>tsne_umi.xls<span class="w">                     </span>
+<span class="w">    </span>├──<span class="w"> </span>umap.png<span class="w">                        </span>
+<span class="w">    </span>└──<span class="w"> </span>VlnPlot.png<span class="w">                      </span>
+</pre></div>
+</div>
+<ol class="arabic simple">
+<li><p>Final report in html</p></li>
+<li><p>Quality control information in csv</p></li>
+<li><p>Filtered feature-barcode matrix</p></li>
+</ol>
+</section>
+</div>
+</div>
+        </div>
+        
+
+        <div class="section" id="section-19">
+            <h1>Algorithms Overview — seeksoultools  documentation</h1>
+            <div class="file-path">Source: seeksoul.seekgene.com/en/v1.3.0/2.tutorial/1.rna/4.description.html</div>
+            <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<section id="id1">
+<h1>Algorithms Overview<a class="headerlink" href="4.description.html#id1" title="Link to this heading"></a></h1>
+<section id="step1-barcode-umi">
+<h2>step1: barcode/UMI extraction<a class="headerlink" href="4.description.html#step1-barcode-umi" title="Link to this heading"></a></h2>
+<p>SeekSoulTools is able to extract the barcode and UMI sequences based on different Read1 structures. The pipeline processes the barcodes and filters Read1 and its corresponding Read2, and an updated fastq file is generated at the end of step 1.</p>
+<section id="id2">
+<h3>Structure design and description<a class="headerlink" href="4.description.html#id2" title="Link to this heading"></a></h3>
+<ul>
+<li><p>Barcode and UMI descriptions: Describing the basic structure of Read1 using letters and numbers, where the letters represent the meaning of the nucleotides and the numbers represent the length of the nucleotides.</p>
+<p>B: barcode bases <br/> L: linker bases <br/> U: UMI bases <br/> X: other arbitrary bases used as placeholders <br/></p>
+<p>Taking the following two Read1 structures as examples：<br/> B8L8B8L10B8U8： <img alt="MM0" src="../../_images/MM0.png"/></p>
+<p>B17U12：
+<img alt="DD" src="../../_images/DD.png"/></p>
+</li>
+<li><p>Anchor-based misalignment design: In MM design, to increase the base balance of the linker portion during sequencing,1-4 bp shifted bases, called anchors, were added. The anchor determines the starting position of the barcode. <img alt="MM" src="../../_images/MM.png"/></p></li>
+</ul>
+</section>
+<section id="id3">
+<h3>Workflow<a class="headerlink" href="4.description.html#id3" title="Link to this heading"></a></h3>
+<section id="anchor">
+<h4>Anchor determination<a class="headerlink" href="4.description.html#anchor" title="Link to this heading"></a></h4>
+<p>For data with misaligned Read1 (produced by MM reagents), SeekSoulTools attempts to find the anchor sequence within the first 7 bases of the Read1 sequence to determine the start position of subsequent barcodes. If the anchor sequence is not found, the corresponding Read1 and R2 are considered invalid reads.</p>
+</section>
+<section id="barcodelinker">
+<h4>Barcode and linker correction<a class="headerlink" href="4.description.html#barcodelinker" title="Link to this heading"></a></h4>
+<p>After determining the starting position of the barcode, the corresponding sequence is extracted based on the structural design. When the extracted barcode sequence is found in the whitelist, it is considered a <strong>valid barcode</strong> and the read count with valid barcodes is recorded. When the barcode is not found in the whitelist, it is considered an <strong>invalid barcode</strong>.</p>
+<p>During sequencing process, there is a certain probability that sequencing error occurs. With the presense of a whitelist, SeekSoulTools are able to do barcode correction. When correction is enabled, if sequences that are one base differ (one humming distance apart) from the invalid barcode appear in the whitelist, we will consider the following circumstances:</p>
+<ul class="simple">
+<li><p>If there is one and only sequence exists in the whitelist, we will correct the invalid barcode to the barcode in the whitelist.</p></li>
+<li><p>If multiple sequences exist in the whitelist, we will correct the invalid barcode to the sequence with the highest read support.</p></li>
+</ul>
+<p>The logic of linker correction is the same as that of barcode correction.</p>
+</section>
+</section>
+<section id="polya">
+<h3>Adaptors and polyA sequence trimming<a class="headerlink" href="4.description.html#polya" title="Link to this heading"></a></h3>
+<p>In transcriptome, polyA tail and Adapter sequences introduced during library preparation, may appear at the end of Read2.We remove these contaminating sequences and make sure the trimmed Read2 length is greater than the minimum length for accurate alignment afterward. If the trimmed Read2 length is less than the minimum length, we consider the read to be invalid.</p>
+<p>After the processing procedure described above, the data composition is shown in the following figure:</p>
+<p><img alt="step1" src="../../_images/step1.png"/></p>
+<ul class="simple">
+<li><p>total: Total reads</p></li>
+<li><p>valid:  Number of reads without correction and number of successfully corrected reads</p></li>
+<li><p>B_corrected:  Number of successfully corrected reads</p></li>
+<li><p>B_no_correction:  Number of reads with incorrect barcodes</p></li>
+<li><p>L_no_correction:  Number of reads with incorrect linkers</p></li>
+<li><p>no_anchor:  Number of reads without anchors</p></li>
+<li><p>trimmed:  Number of reads that have been trimmed</p></li>
+<li><p>too_short:  Number of reads that are shorter than 60bps after trimming</p></li>
+</ul>
+<p>The relationships between the metrics are as follows:</p>
+<p>total = valid + no_anchor + B_no_correction + L_no_correction</p>
+<p>Number of reads in the updated FASTQ file:  total_output = valid - too_short</p>
+</section>
+</section>
+<section id="step2">
+<h2>step2: Alignment<a class="headerlink" href="4.description.html#step2" title="Link to this heading"></a></h2>
+<section id="id4">
+<h3>Sequence Alignment<a class="headerlink" href="4.description.html#id4" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>SeekSoulTools uses an aligner software called <a class="reference external" href="https://github.com/alexdobin/STAR"><strong>STAR</strong></a> to perform splicing-aware alignment of reads to the genome.</p></li>
+<li><p>After the alignment procedure has mapped the reads to the genome, SeekSoulTools uses another software called <a class="reference external" href="http://qualimap.conesalab.org">QualiMap</a> along with a gene annotation transcript file GTF to bucket the reads into exonic, intronic, and intergenic regions.</p></li>
+<li><p>Using <a class="reference external" href="https://subread.sourceforge.net/featureCounts.html">featureCounts</a>, the reads aligned to the genome were annotated to genes, with different rules such as strand specificity and features used for annotation. When using exon for annotation, a read is annotated to the corresponding gene if over 50% of its bases are aligned to the exon. When using transcripts for annotation, a read is annotated to the corresponding gene if over 50% of its bases are aligned to the transcript.</p></li>
+</ul>
+<p>After the processing procedure described above, the metrics is shown below:</p>
+<ul class="simple">
+<li><p>Reads Mapped to Genome: Fraction of reads that aligned to the genome (including both uniquely mapped reads and multi-mapped reads)</p></li>
+<li><p>Reads Mapped Confidently to Genome: Fraction of reads that uniquely mapped to the genome</p></li>
+<li><p>Reads Mapped to Intergenic Regions: Fraction of reads that mapped to intergenic regions</p></li>
+<li><p>Reads Mapped to Intronic Regions: Fraction of reads that mapped to intronic regions</p></li>
+<li><p>Reads Mapped to Exonic Regions: Fraction of reads that mapped to exonic regions</p></li>
+</ul>
+</section>
+</section>
+<section id="step3">
+<h2>step3: Counting<a class="headerlink" href="4.description.html#step3" title="Link to this heading"></a></h2>
+<section id="umi">
+<h3>UMI counting<a class="headerlink" href="4.description.html#umi" title="Link to this heading"></a></h3>
+<p>SeekSoulTools extracts group of reads that shared the same barcode from output BAM file and counts the number of UMIs annotated to genes and the number of reads corresponding to each UMI.</p>
+<ul class="simple">
+<li><p>Filter out reads whose UMIs consist of repetitive bases. For example, TTTTTTTT.</p></li>
+<li><p>If a read has multiple annotations and only one gene annotation is from exon, it is considered a valid read, and all others are filtered.</p></li>
+</ul>
+</section>
+<section id="id5">
+<h3>UMI correction<a class="headerlink" href="4.description.html#id5" title="Link to this heading"></a></h3>
+<p>UMIs may also have sequencing errors during sequencing process. By default, SeekSoulTools uses the <a class="reference external" href="https://umi-tools.readthedocs.io/en/latest/the_methods.html">adjacency</a> from UMI-tools to correct UMIs.</p>
+<p><img alt="Schematic from UMI-tools" src="https://user-images.githubusercontent.com/6096414/93078070-bcfaf980-f681-11ea-87a0-db5ccb979875.png"/> <em>Image source: https://umi-tools.readthedocs.io/en/latest/the_methods.html</em></p>
+</section>
+<section id="id6">
+<h3>Cell calling<a class="headerlink" href="4.description.html#id6" title="Link to this heading"></a></h3>
+<p>In a cell population, we assume that the mRNA content of cells does not differ significantly. If the mRNA content of a barcode is very low, we consider that barcode might be ‘empty’, and the mRNA comes from the background. SeekSoulTools uses the following steps to determine whether a barcode has a cell:</p>
+<ul class="simple">
+<li><p>Sort all barcodes in descending order based on their corresponding UMI counts.</p></li>
+<li><p>The threshold is calculated by dividing the number of UMIs for the barcode at the 1% position of the estimated cells by 10.</p></li>
+<li><p>Barcodes with UMIs greater than the threshold are considered to be cells.</p></li>
+<li><p>If the UMI of a barcode is less than the threshold but greater than 300, DropletUtils is used for further analysis. The DropletUtils method first assumes that barcodes with UMI counts below 100 are empty droplets. It then uses the total UMI count for each gene in each droplet as the expected UMI count for that gene in the background RNA expression profile. Next, it performs a statistical test on the UMI counts of each barcode, identifying those with significant differences as cells.</p></li>
+<li><p>Those do not meet the above criteria are considered as background.</p></li>
+</ul>
+<p>After the processing procedure described above, the metrics is shown below:</p>
+<ul class="simple">
+<li><p>Estimated Number of Cells: Total number of cells by cell calling</p></li>
+<li><p>Fraction Reads in Cells: Fraction of reads after cell calling among all reads used for counting</p></li>
+<li><p>Mean Reads per Cell: Average number of reads per cell, Total number of reads/Number of cells after cell calling</p></li>
+<li><p>Median Genes per Cell: Median gene count in barcodes after cell calling</p></li>
+<li><p>Median UMI Counts per Cell: Median UMI count in barcodes after cell calling</p></li>
+<li><p>Total Genes Detected: Number of genes detected in all cells</p></li>
+<li><p>Sequencing Saturation: 1 - Total UMI count/Total read count</p></li>
+</ul>
+</section>
+</section>
+<section id="step4">
+<h2>step4: Downstream analysis<a class="headerlink" href="4.description.html#step4" title="Link to this heading"></a></h2>
+<p>SeekSoulTools perform downstream analysis when we have gene expression matrix from step3.</p>
+<section id="seurat">
+<h3>Seurat analysis<a class="headerlink" href="4.description.html#seurat" title="Link to this heading"></a></h3>
+<p>SeekSoulTools use Seurat to calculate the mitochondrial content, number of genes, and UMIs of each cell. After that, the gene expression matrix is normalized, and a subset of features that exhibit high cell-to-cell variation in the dataset is identified. Linear dimensional reduction using PCA is then performed, and the result is passed to t-SNE and UMAP for visualization. A graph-based clustering procedure is then followed, and cells are partitioned into different clusters. Finally, SeekSoulTools finds markers that define clusters via differential expression.</p>
+</section>
+</section>
+</section>
+</div>
+</div>
+        </div>
+        
+
+        <div class="section" id="section-20">
+            <h1>Run SeekSoulTools — seeksoultools  documentation</h1>
+            <div class="file-path">Source: seeksoul.seekgene.com/en/v1.3.0/2.tutorial/1.rna/2.run.html</div>
+            <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<section id="id1">
+<h1>Run SeekSoulTools<a class="headerlink" href="2.run.html#id1" title="Link to this heading"></a></h1>
+<section id="id2">
+<h2>Run tests<a class="headerlink" href="2.run.html#id2" title="Link to this heading"></a></h2>
+<p>Example 1: Basic usage</p>
+<p>Set up the necessary configuration files for the analysis, including the paths to the sample data, the chemistry versions, the genome index, the gene annotation file, etc. Run the SeekSoulTools using the following command:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>seeksoultools<span class="w"> </span>rna<span class="w"> </span>run<span class="w"> </span><span class="se">\</span>
+--fq1<span class="w"> </span>/path/to/demo_dd/demo_dd_S39_L001_R1_001.fastq.gz<span class="w"> </span><span class="se">\</span>
+--fq2<span class="w"> </span>/path/to/demo_dd/demo_dd_S39_L001_R2_001.fastq.gz<span class="w"> </span><span class="se">\</span>
+--samplename<span class="w"> </span>demo_dd<span class="w"> </span><span class="se">\</span>
+--genomeDir<span class="w"> </span>/path/to/GRCh38/star<span class="w"> </span><span class="se">\</span>
+--gtf<span class="w"> </span>/path/to/GRCh38/genes/genes.gtf<span class="w"> </span><span class="se">\</span>
+--chemistry<span class="w"> </span>DDV2<span class="w"> </span><span class="se">\</span>
+--core<span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="se">\</span>
+--include-introns
+</pre></div>
+</div>
+<p>Example 2: Specify a different version of STAR for analysis.</p>
+<p>To use a specific version of STAR for analysis while ensuring compatibility with the –genomeDir generated by that version, you can run the SeekSoulTools using the following command, specifying the path to the desired version of STAR:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>seeksoultools<span class="w"> </span>rna<span class="w"> </span>run<span class="w"> </span><span class="se">\</span>
+--fq1<span class="w"> </span>/path/to/demo_dd/demo_dd_S39_L001_R1_001.fastq.gz<span class="w"> </span><span class="se">\</span>
+--fq2<span class="w"> </span>/path/to/demo_dd/demo_dd_S39_L001_R2_001.fastq.gz<span class="w"> </span><span class="se">\</span>
+--samplename<span class="w"> </span>demo_dd<span class="w"> </span><span class="se">\</span>
+--genomeDir<span class="w"> </span>/path/to/GRCh38/star<span class="w"> </span><span class="se">\</span>
+--gtf<span class="w"> </span>/path/to/GRCh38/genes/genes.gtf<span class="w"> </span><span class="se">\</span>
+--chemistry<span class="w"> </span>DDV2<span class="w"> </span><span class="se">\</span>
+--core<span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="se">\</span>
+--include-introns<span class="w"> </span><span class="se">\</span>
+--star_path<span class="w"> </span>/path/to/cellranger-5.0.0/lib/bin/STAR
+</pre></div>
+</div>
+<p>Example 3: A sample has multiple sets of fastq files</p>
+<p>If a sample has multiple sets of FASTQ data, you can provide the paths to all the FASTQ files associated with that sample when running the SeekSoulTools. Here's an example command:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>seeksoultools<span class="w"> </span>rna<span class="w"> </span>run<span class="w"> </span><span class="se">\</span>
+--fq1<span class="w"> </span>/path/to/demo_dd_S39_L001_R1_001.fastq.gz<span class="w"> </span><span class="se">\</span>
+--fq1<span class="w"> </span>/path/to/demo_dd_S39_L002_R1_001.fastq.gz<span class="w"> </span><span class="se">\</span>
+--fq2<span class="w"> </span>/path/to/demo_dd_S39_L001_R2_001.fastq.gz<span class="w"> </span><span class="se">\</span>
+--fq2<span class="w"> </span>/path/to/demo_dd_S39_L002_R2_001.fastq.gz<span class="w"> </span><span class="se">\</span>
+--samplename<span class="w"> </span>demo<span class="w"> </span><span class="se">\</span>
+--genomeDir<span class="w"> </span>/path/to/GRCh38/star<span class="w"> </span><span class="se">\</span>
+--gtf<span class="w"> </span>/path/to/GRCh38/genes/genes.gtf<span class="w"> </span><span class="se">\</span>
+--chemistry<span class="w"> </span>DDV2<span class="w"> </span><span class="se">\</span>
+--core<span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="se">\</span>
+--include-introns
+</pre></div>
+</div>
+<p>Example 4: Customize the structure of R1</p>
+<p>To customize the structure of the Read 1 (R1) FASTQ files, here's an example command:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>seeksoultools<span class="w"> </span>rna<span class="w"> </span>run<span class="w"> </span><span class="se">\</span>
+--fq1<span class="w"> </span>/path/to/demo_dd_S39_L001_R1_001.fastq.gz<span class="w"> </span><span class="se">\</span>
+--fq2<span class="w"> </span>/path/to/demo_dd_S39_L001_R2_001.fastq.gz<span class="w"> </span><span class="se">\</span>
+--samplename<span class="w"> </span>demo<span class="w"> </span><span class="se">\</span>
+--genomeDir<span class="w"> </span>/path/to/GRCh38/star<span class="w"> </span><span class="se">\</span>
+--gtf<span class="w"> </span>/path/to/GRCh38/genes/genes.gtf<span class="w"> </span><span class="se">\</span>
+--barcode<span class="w"> </span>/path/to/utils/CLS1.txt<span class="w"> </span><span class="se">\</span>
+--barcode<span class="w"> </span>/path/to/utils/CLS2.txt<span class="w"> </span><span class="se">\</span>
+--barcode<span class="w"> </span>/path/to/utils/CLS3.txt<span class="w"> </span><span class="se">\</span>
+--linker<span class="w"> </span>/path/to/utils/Linker1.txt<span class="w"> </span><span class="se">\</span>
+--linker<span class="w"> </span>/path/to/utils/Linker2.txt<span class="w"> </span><span class="se">\</span>
+--structure<span class="w"> </span>B9L12B9L13B9U8<span class="w"> </span><span class="se">\</span>
+--core<span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="se">\</span>
+--include-introns
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>The structure of read1 is represented by <code class="docutils literal notranslate"><span class="pre">B9L12B9L13B9U8</span></code>, which means it consists of three sections of cell barcode, each with 9 bases, and a UMI section with 8 bases. The linker section between the cell barcode and UMI consists of two parts, with the first part being 12 bases and the second part being 13 bases</p></li>
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">--barcode</span></code> to specify the three sections of barcodes sequentially, and use <code class="docutils literal notranslate"><span class="pre">--linker</span></code> to specify the two sections of linkers sequentially.</p></li>
+</ul>
+</section>
+<section id="id3">
+<h2>Parameter descriptions<a class="headerlink" href="2.run.html#id3" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Parameters</p></th>
+<th class="head"><p>Descriptions</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>–fq1</p></td>
+<td><p>Paths to R1 fastq files.</p></td>
+</tr>
+<tr class="row-odd"><td><p>–fq2</p></td>
+<td><p>Paths to R2 fastq files.</p></td>
+</tr>
+<tr class="row-even"><td><p>–samplename</p></td>
+<td><p>Sample name. A directory will be created named after the sample name in the outdir directory. Only digits, letters, and underscores are supported.</p></td>
+</tr>
+<tr class="row-odd"><td><p>–outdir</p></td>
+<td><p>Output directory. Default: ./</p></td>
+</tr>
+<tr class="row-even"><td><p>–genomeDir</p></td>
+<td><p>The path of the reference genome generated by STAR. The version needs to be consistent with the STAR used by SeekSoulTools.</p></td>
+</tr>
+<tr class="row-odd"><td><p>–gtf</p></td>
+<td><p>Path to the GTF file for the corresponding species.</p></td>
+</tr>
+<tr class="row-even"><td><p>–core</p></td>
+<td><p>Number of threads used for the analysis.</p></td>
+</tr>
+<tr class="row-odd"><td><p>–chemistry</p></td>
+<td><p>Reagent type, with each type corresponding to a combination of <code class="docutils literal notranslate"><span class="pre">--shift</span></code>, <code class="docutils literal notranslate"><span class="pre">--pattern</span></code>, <code class="docutils literal notranslate"><span class="pre">--structure</span></code>, <code class="docutils literal notranslate"><span class="pre">--barcode</span></code>, and <code class="docutils literal notranslate"><span class="pre">--sc5p</span></code>. Available options: DDV2, DD5V1, MM, MM-D. <br/>DDV2 corresponds to the SeekOne™ DD Single Cell 3' Transcriptome-seq Kit. <br/>DD5V1 corresponds to the SeekOne™ DD Single Cell 5' Transcriptome-seq Kit. <br/>MM corresponds to the SeekOne™ MM Single Cell Transcriptome Kit. <br/> MM-D corresponds to the SeekOne™ MM Large-well Single Cell Transcriptome-seq Kit.</p></td>
+</tr>
+<tr class="row-even"><td><p>–skip_misB</p></td>
+<td><p>If enabled, no base mismatch is allowed for barcode. Default is 1.</p></td>
+</tr>
+<tr class="row-odd"><td><p>–skip_misL</p></td>
+<td><p>If enabled, no base mismatch is allowed for linker. Default is 1.</p></td>
+</tr>
+<tr class="row-even"><td><p>–skip_multi</p></td>
+<td><p>If enabled, discard reads that can be corrected to multiple white-listed barcodes. Barcodes are corrected to the barcode with the highest frequency by default.</p></td>
+</tr>
+<tr class="row-odd"><td><p>–expectNum</p></td>
+<td><p>Estimated number of captured cells.</p></td>
+</tr>
+<tr class="row-even"><td><p>–forceCell</p></td>
+<td><p>When number of cells obtained from analysis is abnormal, add this parameter with expected value N. SeekSoulTools will select the top N cells based on UMI from high to low.</p></td>
+</tr>
+<tr class="row-odd"><td><p>–include-introns</p></td>
+<td><p>When disabled, only exon reads are used for quantification. When enabled, intron reads are also used for quantification.</p></td>
+</tr>
+<tr class="row-even"><td><p>–star_path</p></td>
+<td><p>Path to another version of STAR for alignment. The version must be compatible with the <code class="docutils literal notranslate"><span class="pre">--genomeDir</span></code> version. The default <code class="docutils literal notranslate"><span class="pre">--star_path</span></code> is the STAR in the environment.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</div>
+</div>
+        </div>
+        
+
+        <div class="section" id="section-21">
+            <h1>Data preparation — seeksoultools  documentation</h1>
+            <div class="file-path">Source: seeksoul.seekgene.com/en/v1.3.0/2.tutorial/1.rna/1.data.html</div>
+            <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<section id="id1">
+<h1>Data preparation<a class="headerlink" href="1.data.html#id1" title="Link to this heading"></a></h1>
+<section id="id2">
+<h2>Download sample datasets<a class="headerlink" href="1.data.html#id2" title="Link to this heading"></a></h2>
+<p><a class="reference external" href="https://seekgene-public.oss-cn-beijing.aliyuncs.com/software/data/demodata/demo3k.tar">sample datasets</a> - md5: 3d15fcfdefc0722735d726f40ec4e324 (Species: Homo sapiens.)</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio"/>
+<label class="sd-tab-label" for="sd-tab-item-0">
+wget</label><div class="sd-tab-content docutils">
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>wget<span class="w"> </span>-c<span class="w"> </span>-O<span class="w"> </span>demo_dd.tar<span class="w"> </span><span class="s2">"https://seekgene-public.oss-cn-beijing.aliyuncs.com/software/data/demodata/demo_dd.tar"</span>
+<span class="c1"># decompress</span>
+tar<span class="w"> </span>xf<span class="w"> </span>demo_dd.tar
+</pre></div>
+</div>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio"/>
+<label class="sd-tab-label" for="sd-tab-item-1">
+curl</label><div class="sd-tab-content docutils">
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>-C<span class="w"> </span>-<span class="w"> </span>-o<span class="w"> </span>demo_dd.tar<span class="w"> </span><span class="s2">"https://seekgene-public.oss-cn-beijing.aliyuncs.com/software/data/demodata/demo_dd.tar"</span>
+<span class="c1"># decompress</span>
+tar<span class="w"> </span>xf<span class="w"> </span>demo_dd.tar
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<hr class="docutils"/>
+<section id="id3">
+<h2>Download and build reference genome<a class="headerlink" href="1.data.html#id3" title="Link to this heading"></a></h2>
+<p><a class="reference external" href="https://seekgene-public.oss-cn-beijing.aliyuncs.com/software/data/reference/GRCh38.tar.gz">Download-human-reference-GRCh38</a> - md5: 5473213ae62ebf35326a85c8fba6cc42</p>
+<p><a class="reference external" href="https://seekgene-public.oss-cn-beijing.aliyuncs.com/software/data/reference/mm10.tar.gz">Download-mouse-reference-mm10</a> - md5: 5c7c63701ffd7bb5e6b2b9c2b650e3c2</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-2" name="sd-tab-set-1" type="radio"/>
+<label class="sd-tab-label" for="sd-tab-item-2">
+wget</label><div class="sd-tab-content docutils">
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>wget<span class="w"> </span>-c<span class="w"> </span>-O<span class="w"> </span>GRCh38.tar.gz<span class="w"> </span><span class="s2">"https://seekgene-public.oss-cn-beijing.aliyuncs.com/software/data/reference/GRCh38.tar.gz"</span>
+<span class="c1"># decompress</span>
+tar<span class="w"> </span>-zxvf<span class="w"> </span>GRCh38.tar.gz
+wget<span class="w"> </span>-c<span class="w"> </span>-O<span class="w"> </span>mm10.tar.gz<span class="w"> </span><span class="s2">"https://seekgene-public.oss-cn-beijing.aliyuncs.com/software/data/reference/mm10.tar.gz"</span>
+
+tar<span class="w"> </span>-zxvf<span class="w"> </span>mm10.tar.gz
+</pre></div>
+</div>
+</div>
+<input id="sd-tab-item-3" name="sd-tab-set-1" type="radio"/>
+<label class="sd-tab-label" for="sd-tab-item-3">
+curl</label><div class="sd-tab-content docutils">
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>-C<span class="w"> </span>-<span class="w"> </span>-o<span class="w"> </span>GRCh38.tar.gz<span class="w"> </span><span class="s2">"https://seekgene-public.oss-cn-beijing.aliyuncs.com/software/data/reference/GRCh38.tar.gz"</span>
+<span class="c1"># decompress</span>
+tar<span class="w"> </span>-zxvf<span class="w"> </span>GRCh38.tar.gz
+
+curl<span class="w"> </span>-C<span class="w"> </span>-<span class="w"> </span>-o<span class="w"> </span>mm10.tar.gz<span class="w"> </span><span class="s2">"https://seekgene-public.oss-cn-beijing.aliyuncs.com/software/data/reference/mm10.tar.gz"</span>
+
+tar<span class="w"> </span>-zxvf<span class="w"> </span>mm10.tar.gz
+</pre></div>
+</div>
+</div>
+</div>
+<p>The assembly of the reference genome refers to <a class="reference internal" href="../../reference.html#ref-label"><span class="std std-ref"> How to build reference genome？</span></a></p>
+</section>
+</section>
+</div>
+</div>
+        </div>
+        
+
+        <div class="section" id="section-22">
+            <h1>addtag — seeksoultools  documentation</h1>
+            <div class="file-path">Source: seeksoul.seekgene.com/en/v1.3.0/2.tutorial/0.utils/1.addtag.html</div>
+            <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<section id="addtag">
+<h1>addtag<a class="headerlink" href="1.addtag.html#addtag" title="Link to this heading"></a></h1>
+<p>Modify BAM files to include barcode and UMI tags.</p>
+<section id="id1">
+<h2>Run tests<a class="headerlink" href="1.addtag.html#id1" title="Link to this heading"></a></h2>
+<p>Set up necessary configuration files for analysis, including the sample’s BAM file and the umi.xls file in the step3 directory. Run the SeekSoulTools using the following</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>seeksoultools<span class="w"> </span>utils<span class="w"> </span>addtag<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--inbam<span class="w"> </span>step2/featureCounts/Samplename_SortedByName.bam<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--umifile<span class="w"> </span>step3/umi.xls<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--outbam<span class="w"> </span>Samplename_addtag.bam
+</pre></div>
+</div>
+</section>
+<section id="id2">
+<h2>Parameter descriptions<a class="headerlink" href="1.addtag.html#id2" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Parameters</p></th>
+<th class="head"><p>Descriptions</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>–inbam</p></td>
+<td><p>sample’s BAM file in the step2/featureCount directory.</p></td>
+</tr>
+<tr class="row-odd"><td><p>–outbam</p></td>
+<td><p>The path of the BAM file with added tags.</p></td>
+</tr>
+<tr class="row-even"><td><p>–umifile</p></td>
+<td><p>The path of the umi.xls file in the step3 directory</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</div>
+</div>
+        </div>
+        
+
+        <div class="section" id="section-23">
+            <h1>Output descriptions — seeksoultools  documentation</h1>
+            <div class="file-path">Source: seeksoul.seekgene.com/en/v1.3.0/2.tutorial/2.fast/3.output.html</div>
+            <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<section id="id1">
+<h1>Output descriptions<a class="headerlink" href="3.output.html#id1" title="Link to this heading"></a></h1>
+<p>Here’s the output directory structure: each line represents a file or folder, indicated by “├──”, and the numbers indicate three important output files.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>.
+├──<span class="w"> </span>PBMC_report.html
+├──<span class="w"> </span>PBMC_summary.csv
+├──<span class="w"> </span>PBMC_summary.json
+├──<span class="w"> </span>step1
+│<span class="w">   </span>├──<span class="w"> </span>PBMC_1.fq.gz
+│<span class="w">   </span>├──<span class="w"> </span>PBMC_2.fq.gz
+│<span class="w">   </span>├──<span class="w"> </span>PBMC_multi_1.fq.gz
+│<span class="w">   </span>├──<span class="w"> </span>PBMC_multi_2.fq.gz
+│<span class="w">   </span>└──<span class="w"> </span>PBMC_multi.json
+├──<span class="w"> </span>step2
+│<span class="w">   </span>├──<span class="w"> </span>featureCounts
+│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>counts.txt
+│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>counts.txt.summary
+│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>PBMC_SortedByName.bam
+│<span class="w">   </span>└──<span class="w"> </span>STAR
+│<span class="w">       </span>├──<span class="w"> </span>downbam
+│<span class="w">       </span>│<span class="w">   </span>├──<span class="w"> </span>log.txt
+│<span class="w">       </span>│<span class="w">   </span>├──<span class="w"> </span>PBMC.bed
+│<span class="w">       </span>│<span class="w">   </span>├──<span class="w"> </span>PBMC.down.0.1.bam
+│<span class="w">       </span>│<span class="w">   </span>├──<span class="w"> </span>PBMC.down.0.1.bam.bai
+│<span class="w">       </span>│<span class="w">   </span>├──<span class="w"> </span>PBMC.geneBodyCoverage.curves.pdf
+│<span class="w">       </span>│<span class="w">   </span>├──<span class="w"> </span>PBMC.geneBodyCoverage.r
+│<span class="w">       </span>│<span class="w">   </span>├──<span class="w"> </span>PBMC.geneBodyCoverage.txt
+│<span class="w">       </span>│<span class="w">   </span>└──<span class="w"> </span>PBMC.reduction.bed
+│<span class="w">       </span>├──<span class="w"> </span>PBMC_Log.final.out
+│<span class="w">       </span>├──<span class="w"> </span>PBMC_Log.out
+│<span class="w">       </span>├──<span class="w"> </span>PBMC_Log.progress.out
+│<span class="w">       </span>├──<span class="w"> </span>PBMC_SJ.out.tab
+│<span class="w">       </span>├──<span class="w"> </span>PBMC_SortedByCoordinate.bam
+│<span class="w">       </span>├──<span class="w"> </span>PBMC_SortedByCoordinate.bam.bai
+│<span class="w">       </span>├──<span class="w"> </span>PBMC_SortedByName.bam
+│<span class="w">       </span>├──<span class="w"> </span>PBMC__STARtmp
+│<span class="w">       </span>├──<span class="w"> </span>report.pdf
+│<span class="w">       </span>├──<span class="w"> </span>rnaseq_qc_results.txt
+│<span class="w">       </span>└──<span class="w"> </span>rRNA
+│<span class="w">           </span>├──<span class="w"> </span>counts.txt
+│<span class="w">           </span>├──<span class="w"> </span>counts.txt.summary
+│<span class="w">           </span>├──<span class="w"> </span>PBMC_Aligned.out.bam
+│<span class="w">           </span>├──<span class="w"> </span>PBMC_Aligned.out.bam.featureCounts.bam
+│<span class="w">           </span>├──<span class="w"> </span>PBMC_Log.final.out
+│<span class="w">           </span>├──<span class="w"> </span>PBMC_Log.out
+│<span class="w">           </span>├──<span class="w"> </span>PBMC_Log.progress.out
+│<span class="w">           </span>├──<span class="w"> </span>PBMC_SJ.out.tab
+│<span class="w">           </span>├──<span class="w"> </span>PBMC__STARtmp
+│<span class="w">           </span>└──<span class="w"> </span>PBMC.xls
+├──<span class="w"> </span>step3
+│<span class="w">   </span>├──<span class="w"> </span>counts.xls
+│<span class="w">   </span>├──<span class="w"> </span>detail.xls
+│<span class="w">   </span>├──<span class="w"> </span>filtered_feature_bc_matrix
+│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>barcodes.tsv.gz
+│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>features.tsv.gz
+│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>matrix.mtx.gz
+│<span class="w">   </span>├──<span class="w"> </span>raw_feature_bc_matrix
+│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>barcodes.tsv.gz
+│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>features.tsv.gz
+│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>matrix.mtx.gz
+│<span class="w">   </span>└──<span class="w"> </span>umi.xls
+└──<span class="w"> </span>step4
+<span class="w">    </span>├──<span class="w"> </span>biotype_FindAllMarkers.xls
+<span class="w">    </span>├──<span class="w"> </span>FeatureScatter.png
+<span class="w">    </span>├──<span class="w"> </span>FindAllMarkers.xls
+<span class="w">    </span>├──<span class="w"> </span>lncgene_FindAllMarkers.xls
+<span class="w">    </span>├──<span class="w"> </span>mito_quantile.xls
+<span class="w">    </span>├──<span class="w"> </span>nCount_quantile.xls
+<span class="w">    </span>├──<span class="w"> </span>nFeature_quantile.xls
+<span class="w">    </span>├──<span class="w"> </span>PBMC.rds
+<span class="w">    </span>├──<span class="w"> </span>resolution.xls
+<span class="w">    </span>├──<span class="w"> </span>top10_heatmap.png
+<span class="w">    </span>├──<span class="w"> </span>tsne.png
+<span class="w">    </span>├──<span class="w"> </span>tsne_umi.png
+<span class="w">    </span>├──<span class="w"> </span>tsne_umi.xls
+<span class="w">    </span>├──<span class="w"> </span>umap.png
+<span class="w">    </span>└──<span class="w"> </span>VlnPlot.png
+</pre></div>
+</div>
+<ol class="arabic simple">
+<li><p>The file “PBMC_report.html” is a sample HTML report of the sample.</p></li>
+<li><p>The file “PBMC_summary.csv” contains quality control information of the sample in CSV format.</p></li>
+<li><p>The file “step3/filtered_feature_bc_matrix” is the filtered expression matrix after applying filtering steps.</p></li>
+<li><p>The file “step4/PBMC.rds” is an RDS file containing the matrix that has been processed using Seurat.</p></li>
+</ol>
+</section>
+</div>
+</div>
+        </div>
+        
+
+        <div class="section" id="section-24">
+            <h1>Algorithms Overview — seeksoultools  documentation</h1>
+            <div class="file-path">Source: seeksoul.seekgene.com/en/v1.3.0/2.tutorial/2.fast/4.description.html</div>
+            <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<section id="id1">
+<h1>Algorithms Overview<a class="headerlink" href="4.description.html#id1" title="Link to this heading"></a></h1>
+<section id="step1-barcode-umi">
+<h2>step1: barcode/UMI extraction<a class="headerlink" href="4.description.html#step1-barcode-umi" title="Link to this heading"></a></h2>
+<p>SeekSoulTools is able to extract the barcode and UMI sequences based on different Read1 structures. The pipeline processes the barcodes and filters Read1 and its corresponding Read2, and an updated fastq file is generated at the end of step 1.</p>
+<section id="id2">
+<h3>Structure design and description<a class="headerlink" href="4.description.html#id2" title="Link to this heading"></a></h3>
+<ul>
+<li><p>Barcode and UMI descriptions: Describing the basic structure of Read1 using letters and numbers, where the letters represent the meaning of the nucleotides and the numbers represent the length of the nucleotides.</p>
+<p>B: barcode bases <br/>  U: UMI bases <br/> X: other arbitrary bases used as placeholders <br/></p>
+</li>
+</ul>
+<p>The Read1 structure of the FAST product is B17U12:  <br/> <img alt="DD" src="../../_images/DD1.png"/></p>
+</section>
+<section id="id3">
+<h3>Workflow<a class="headerlink" href="4.description.html#id3" title="Link to this heading"></a></h3>
+<section id="barcode">
+<h4>Barcode and linker correction<a class="headerlink" href="4.description.html#barcode" title="Link to this heading"></a></h4>
+<p>After determining the starting position of the barcode, the corresponding sequence is extracted based on the structural design. When the extracted barcode sequence is found in the whitelist, it is considered a <strong>valid barcode</strong> and the read count with valid barcodes is recorded. When the barcode is not found in the whitelist, it is considered an <strong>invalid barcode</strong></p>
+<p>During sequencing process, there is a certain probability that sequencing error occurs. With the presense of a whitelist, SeekSoulTools are able to do barcode correction. When correction is enabled, if sequences that are one base differ (one humming distance apart) from the invalid barcode appear in the whitelist, we will consider the following circumstances:</p>
+<ul class="simple">
+<li><p>If there is one and only sequence exists in the whitelist, we will correct the invalid barcode to the barcode in the whitelist.</p></li>
+<li><p>If multiple sequences exist in the whitelist, we will correct the invalid barcode to the sequence with the highest read support.</p></li>
+</ul>
+</section>
+</section>
+<section id="polya">
+<h3>Adaptors and polyA sequence trimming<a class="headerlink" href="4.description.html#polya" title="Link to this heading"></a></h3>
+<p>In transcriptome, polyA tail and Adapter sequences introduced during library preparation, may appear at the end of Read2.We remove these contaminating sequences and make sure the trimmed Read2 length is greater than the minimum length for accurate alignment afterward. If the trimmed Read2 length is less than the minimum length, we consider the read to be invalid.</p>
+<p>After the processing procedure described above, the metrics is shown below:</p>
+<ul class="simple">
+<li><p>total: Total reads</p></li>
+<li><p>valid:  Number of reads without correction and number of successfully corrected reads</p></li>
+<li><p>B_corrected:  Number of successfully corrected reads</p></li>
+<li><p>B_no_correction:  Number of reads with incorrect barcodes</p></li>
+<li><p>trimmed:  Number of reads that have been trimmed</p></li>
+<li><p>too_short:  Number of reads that are shorter than 60bps after trimming</p></li>
+</ul>
+<p>Number of reads in the updated FASTQ file:  total_output = valid - too_short</p>
+</section>
+</section>
+<section id="step2">
+<h2>step2: Alignment<a class="headerlink" href="4.description.html#step2" title="Link to this heading"></a></h2>
+<section id="id4">
+<h3>Sequence Alignment<a class="headerlink" href="4.description.html#id4" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>The processed reads1 and reads2, totaling 8 million reads, were aligned to the reference genome of ribosomes using the <a class="reference external" href="https://github.com/alexdobin/STAR">STAR</a> alignment software. <a class="reference external" href="https://subread.sourceforge.net/featureCounts.html">featureCounts</a> was used to assign the aligned reads to genes and calculate the proportions of rRNA and Mt_rRNA in the data.</p></li>
+<li><p>STAR was used to align the processed reads1 and reads2 to the reference genome.</p></li>
+<li><p>The GTF file was utilized to identify all exon positions of the housekeeping gene ACTB, and the proportion of intervals with coverage exceeding 0.2 times the average depth of ACTB was calculated from the BAM file.</p></li>
+<li><p>Based on the GTF file, all exon intervals of the transcripts were converted to BED format, and 10,000 random intervals of transcripts were selected for gene body plotting.</p></li>
+<li><p>After the alignment procedure has mapped the reads to the genome, SeekSoulTools uses another software called <a class="reference external" href="http://qualimap.conesalab.org">QualiMap</a> along with a gene annotation transcript file GTF to bucket the reads into exonic, intronic, and intergenic regions.</p></li>
+<li><p>Using <a class="reference external" href="https://subread.sourceforge.net/featureCounts.html">featureCounts</a>, the reads aligned to the genome were annotated to genes, with different rules such as strand specificity and features used for annotation. When using exon for annotation, a read is annotated to the corresponding gene if over 50% of its bases are aligned to the exon. When using transcripts for annotation, a read is annotated to the corresponding gene if over 50% of its bases are aligned to the transcript.</p></li>
+</ul>
+<p>After the processing procedure described above, the metrics is shown below:</p>
+<ul class="simple">
+<li><p>Reads Mapped to Genome: Fraction of reads that aligned to the genome (including both uniquely mapped reads and multi-mapped reads)</p></li>
+<li><p>Reads Mapped to Middle Genebody: The proportion of the transcript covered by the 25%-75% interval in gene body.</p></li>
+<li><p>Reads Mapped Confidently to Genome: Fraction of reads that uniquely mapped to the genome</p></li>
+<li><p>Fraction over 0.2 mean coverage depth of ACTB gene: The proportion of the ACTB gene length occupied by the interval with an average coverage depth exceeding 0.2 times the average coverage depth of ACTB gene.</p></li>
+<li><p>rRNA% in Mapped: The proportion of ribosomal genes in the sequencing data</p></li>
+<li><p>Mt_rRNA% in Mapped: The proportion of mitochondrial ribosomal genes in the sequencing data.</p></li>
+<li><p>Reads Mapped to Intronic Regions: Fraction of reads that mapped to intronic regions</p></li>
+<li><p>Reads Mapped to Intronic Regions: Fraction of reads that mapped to intronic regions</p></li>
+<li><p>Reads Mapped to Exonic Regions: Fraction of reads that mapped to exonic regions</p></li>
+</ul>
+</section>
+</section>
+<section id="step3">
+<h2>step3: Counting<a class="headerlink" href="4.description.html#step3" title="Link to this heading"></a></h2>
+<section id="umi">
+<h3>UMI counting<a class="headerlink" href="4.description.html#umi" title="Link to this heading"></a></h3>
+<p>SeekSoulTools extracts group of reads that shared the same barcode from output BAM file and counts the number of UMIs annotated to genes and the number of reads corresponding to each UMI.</p>
+<ul class="simple">
+<li><p>Filter out reads whose UMIs consist of repetitive bases. For example, TTTTTTTT.</p></li>
+<li><p>If a read has multiple annotations and only one gene annotation is from exon, it is considered a valid read, and all others are filtered.</p></li>
+</ul>
+</section>
+<section id="id5">
+<h3>UMI correction<a class="headerlink" href="4.description.html#id5" title="Link to this heading"></a></h3>
+<p>UMIs may also have sequencing errors during sequencing process. By default, SeekSoulTools uses the <a class="reference external" href="https://umi-tools.readthedocs.io/en/latest/the_methods.html">adjacency</a> from UMI-tools to correct UMIs.</p>
+<p><img alt="Schematic from UMI-tools" src="https://user-images.githubusercontent.com/6096414/93078070-bcfaf980-f681-11ea-87a0-db5ccb979875.png"/> <em>Image source: https://umi-tools.readthedocs.io/en/latest/the_methods.html</em></p>
+</section>
+<section id="id6">
+<h3>Cell calling<a class="headerlink" href="4.description.html#id6" title="Link to this heading"></a></h3>
+<p>In a cell population, we assume that the mRNA content of cells does not differ significantly. If the mRNA content of a barcode is very low, we consider that barcode might be ‘empty’, and the mRNA comes from the background. SeekSoulTools uses the following steps to determine whether a barcode has a cell:</p>
+<ul class="simple">
+<li><p>Sort all barcodes in descending order based on their corresponding UMI counts.</p></li>
+<li><p>The threshold is calculated by dividing the number of UMIs for the barcode at the 1% position of the estimated cells by 10.</p></li>
+<li><p>Barcodes with UMIs greater than the threshold are considered to be cells.</p></li>
+<li><p>If the UMI of a barcode is less than the threshold but greater than 300, DropletUtils is used for further analysis. The DropletUtils method first assumes that barcodes with UMI counts below 100 are empty droplets. It then uses the total UMI count for each gene in each droplet as the expected UMI count for that gene in the background RNA expression profile. Next, it performs a statistical test on the UMI counts of each barcode, identifying those with significant differences as cells.</p></li>
+<li><p>Those do not meet the above criteria are considered as background.</p></li>
+</ul>
+<p>After the processing procedure described above, the metrics is shown below:</p>
+<ul class="simple">
+<li><p>Estimated Number of Cells: Total number of cells by cell calling</p></li>
+<li><p>Fraction Reads in Cells: Fraction of reads after cell calling among all reads used for counting</p></li>
+<li><p>Mean Reads per Cell: Average number of reads per cell, Total number of reads/Number of cells after cell calling</p></li>
+<li><p>Median Genes per Cell: Median gene count in barcodes after cell calling</p></li>
+<li><p>Median Genes per Cell: Median gene count in barcodes after cell calling</p></li>
+<li><p>Median UMI Counts per Cell: Median UMI count in barcodes after cell calling</p></li>
+<li><p>Total Genes Detected: Number of genes detected in all cells</p></li>
+<li><p>Sequencing Saturation: 1 - Total UMI count/Total read count</p></li>
+</ul>
+</section>
+</section>
+<section id="step4">
+<h2>step4: Downstream analysis<a class="headerlink" href="4.description.html#step4" title="Link to this heading"></a></h2>
+<p>SeekSoulTools perform downstream analysis when we have gene expression matrix from step3.</p>
+<section id="seurat">
+<h3>Seurat analysis<a class="headerlink" href="4.description.html#seurat" title="Link to this heading"></a></h3>
+<p>SeekSoulTools use Seurat to calculate the mitochondrial content, number of genes, and UMIs of each cell. After that, the gene expression matrix is normalized, and a subset of features that exhibit high cell-to-cell variation in the dataset is identified. Linear dimensional reduction using PCA is then performed, and the result is passed to t-SNE and UMAP for visualization. A graph-based clustering procedure is then followed, and cells are partitioned into different clusters. Finally, SeekSoulTools finds markers that define clusters via differential expression.</p>
+</section>
+</section>
+</section>
+</div>
+</div>
+        </div>
+        
+
+        <div class="section" id="section-25">
+            <h1>Run SeekSoulTools — seeksoultools  documentation</h1>
+            <div class="file-path">Source: seeksoul.seekgene.com/en/v1.3.0/2.tutorial/2.fast/2.run.html</div>
+            <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<section id="id1">
+<h1>Run SeekSoulTools<a class="headerlink" href="2.run.html#id1" title="Link to this heading"></a></h1>
+<section id="id2">
+<h2>Run tests<a class="headerlink" href="2.run.html#id2" title="Link to this heading"></a></h2>
+<p>Example 1:  single cell full length RNA sequence data</p>
+<p>Set up the necessary configuration files for the analysis, including the paths to the sample data, the chemistry versions, the genome index, the gene annotation file, etc. Run the SeekSoulTools using the following command:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>seeksoultools<span class="w"> </span>fast<span class="w"> </span>run<span class="w"> </span><span class="se">\</span>
+--fq1<span class="w"> </span>/path/to/cellline/cellline_R1.fq.gz<span class="w"> </span><span class="se">\</span>
+--fq2<span class="w"> </span>/path/to/cellline/cellline_R2.fq.gz<span class="w"> </span><span class="se">\</span>
+--samplename<span class="w"> </span>demo<span class="w"> </span><span class="se">\</span>
+--genomeDir<span class="w"> </span>/path/to/GRCh38/star<span class="w"> </span><span class="se">\</span>
+--gtf<span class="w"> </span>/path/to/GRCh38/genes/genes.gtf<span class="w"> </span><span class="se">\</span>
+--chemistry<span class="w"> </span>DD-Q<span class="w"> </span><span class="se">\</span>
+--include-introns<span class="w"> </span><span class="se">\</span>
+--core<span class="w"> </span><span class="m">4</span>
+</pre></div>
+</div>
+<p>Example 2:  Single-cell transcriptomic data from FFPE samples, using parameters <code class="docutils literal notranslate"><span class="pre">--scoremin</span> <span class="pre">0.2</span> <span class="pre">--matchnmin</span> <span class="pre">0.33</span></code></p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>seeksoultools<span class="w"> </span>fast<span class="w"> </span>run<span class="w"> </span><span class="se">\</span>
+--fq1<span class="w"> </span>/path/to/ffpe/ffpe_R1.fq.gz<span class="w"> </span><span class="se">\</span>
+--fq2<span class="w"> </span>/path/to/ffpe/ffpe_R2.fq.gz<span class="w"> </span><span class="se">\</span>
+--samplename<span class="w"> </span>demo<span class="w"> </span><span class="se">\</span>
+--genomeDir<span class="w"> </span>/path/to/GRCh38/star<span class="w"> </span><span class="se">\</span>
+--gtf<span class="w"> </span>/path/to/GRCh38/genes/genes.gtf<span class="w"> </span><span class="se">\</span>
+--scoremin<span class="w"> </span><span class="m">0</span>.2<span class="w"> </span><span class="se">\</span>
+--matchnmin<span class="w"> </span><span class="m">0</span>.33<span class="w"> </span><span class="se">\</span>
+--chemistry<span class="w"> </span>DD-Q<span class="w"> </span><span class="se">\</span>
+--include-introns<span class="w"> </span><span class="se">\</span>
+--core<span class="w"> </span><span class="m">4</span>
+</pre></div>
+</div>
+</section>
+<section id="id3">
+<h2>Parameter descriptions<a class="headerlink" href="2.run.html#id3" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Parameters</p></th>
+<th class="head"><p>Descriptions</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>–fq1</p></td>
+<td><p>Paths to R1 fastq files.</p></td>
+</tr>
+<tr class="row-odd"><td><p>–fq2</p></td>
+<td><p>Paths to R2 fastq files.</p></td>
+</tr>
+<tr class="row-even"><td><p>–samplename</p></td>
+<td><p>Sample name. A directory will be created named after the sample name in the outdir directory. Only digits, letters, and underscores are supported.</p></td>
+</tr>
+<tr class="row-odd"><td><p>–outdir</p></td>
+<td><p>Output directory. Default: ./</p></td>
+</tr>
+<tr class="row-even"><td><p>–genomeDir</p></td>
+<td><p>The path of the reference genome generated by STAR. The version needs to be consistent with the STAR used by SeekSoulTools.</p></td>
+</tr>
+<tr class="row-odd"><td><p>–gtf</p></td>
+<td><p>Path to the GTF file for the corresponding species.</p></td>
+</tr>
+<tr class="row-even"><td><p>–rRNAgenomeDir</p></td>
+<td><p>The path to the reference genome generated by STAR, which is used for evaluating rRNA portion. The version needs to be consistent with the STAR used by SeekSoulTools.</p></td>
+</tr>
+<tr class="row-odd"><td><p>–rRNAgtf</p></td>
+<td><p>Path to the GTF file for the corresponding species, which is used for evaluating rRNA portion. Not required.</p></td>
+</tr>
+<tr class="row-even"><td><p>–core</p></td>
+<td><p>Number of threads used for the analysis</p></td>
+</tr>
+<tr class="row-odd"><td><p>–chemistry</p></td>
+<td><p>Reagent type, with each type corresponding to a combination of <code class="docutils literal notranslate"><span class="pre">--shift</span></code>, <code class="docutils literal notranslate"><span class="pre">--pattern</span></code>, <code class="docutils literal notranslate"><span class="pre">--structure</span></code>, <code class="docutils literal notranslate"><span class="pre">--barcode</span></code>, and <code class="docutils literal notranslate"><span class="pre">--sc5p</span></code>. Available options: DD-Q. <br/>DD-Q corresponds to the SeekOne™ DD Single Cell Full-length RNA Sequence Transcriptome-seq Kit.</p></td>
+</tr>
+<tr class="row-even"><td><p>–skip_misB</p></td>
+<td><p>If enabled, no base mismatch is allowed for barcode. Default is 1.</p></td>
+</tr>
+<tr class="row-odd"><td><p>–skip_misL</p></td>
+<td><p>If enabled, no base mismatch is allowed for linker. Default is 1.</p></td>
+</tr>
+<tr class="row-even"><td><p>–skip_multi</p></td>
+<td><p>If enabled, discard reads that can be corrected to multiple white-listed barcodes. Barcodes are corrected to the barcode with the highest frequency by default.</p></td>
+</tr>
+<tr class="row-odd"><td><p>–expectNum</p></td>
+<td><p>Estimated number of captured cells.</p></td>
+</tr>
+<tr class="row-even"><td><p>–forceCell</p></td>
+<td><p>When the number of cells obtained from analysis is abnormal, add this parameter with expected value N. SeekSoulTools will select the top N cells based on UMI from high to low.</p></td>
+</tr>
+<tr class="row-odd"><td><p>–include-introns</p></td>
+<td><p>When disabled, only exon reads are used for quantification. When enabled, intron reads are also used for quantification.</p></td>
+</tr>
+<tr class="row-even"><td><p>–star_path</p></td>
+<td><p>Path to another version of STAR for alignment. The version must be compatible with the <code class="docutils literal notranslate"><span class="pre">--genomeDir</span></code> version. The default <code class="docutils literal notranslate"><span class="pre">--star_path</span></code> is the STAR in the environment.</p></td>
+</tr>
+<tr class="row-odd"><td><p>–scoremin</p></td>
+<td><p>Set <code class="docutils literal notranslate"><span class="pre">--outFilterScoreMinOverLread</span></code> parameter of STAR. By adjusting the value, you can modify the alignment criteria for mapping reads to the reference genome for FFPE sample.</p></td>
+</tr>
+<tr class="row-even"><td><p>–matchnmin</p></td>
+<td><p>Set <code class="docutils literal notranslate"><span class="pre">--outFilterMatchNminOverLread</span></code> parameter of STAR. By adjusting the value, you can modify the alignment criteria for mapping reads to the reference genome for FFPE sample.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</div>
+</div>
+        </div>
+        
+
+        <div class="section" id="section-26">
+            <h1>Data preparation — seeksoultools  documentation</h1>
+            <div class="file-path">Source: seeksoul.seekgene.com/en/v1.3.0/2.tutorial/2.fast/1.data.html</div>
+            <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<section id="id1">
+<h1>Data preparation<a class="headerlink" href="1.data.html#id1" title="Link to this heading"></a></h1>
+<section id="id2">
+<h2>Download sample datasets<a class="headerlink" href="1.data.html#id2" title="Link to this heading"></a></h2>
+<p><a class="reference external" href="https://seekgene-public.oss-cn-beijing.aliyuncs.com/software/data/demodata/cellline.tar.gz">sample datasets</a> - md5: 878de2833feea2deb7d79224409d0d09 (Species: Homo sapiens.)</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio"/>
+<label class="sd-tab-label" for="sd-tab-item-0">
+wget</label><div class="sd-tab-content docutils">
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>wget<span class="w"> </span>-c<span class="w"> </span>-O<span class="w"> </span>cellline.tar.gz<span class="w"> </span><span class="s2">"https://seekgene-public.oss-cn-beijing.aliyuncs.com/software/data/demodata/cellline.tar.gz"</span>
+<span class="c1"># decompress</span>
+tar<span class="w"> </span>zxf<span class="w"> </span>cellline.tar.gz
+</pre></div>
+</div>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio"/>
+<label class="sd-tab-label" for="sd-tab-item-1">
+curl</label><div class="sd-tab-content docutils">
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>-C<span class="w"> </span>-<span class="w"> </span>-o<span class="w"> </span>cellline.tar.gz<span class="w"> </span><span class="s2">"https://seekgene-public.oss-cn-beijing.aliyuncs.com/software/data/demodata/cellline.tar.gz"</span>
+<span class="c1"># decompress</span>
+tar<span class="w"> </span>zxf<span class="w"> </span>cellline.tar.gz
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<hr class="docutils"/>
+<section id="id3">
+<h2>Download and assembly of reference genome<a class="headerlink" href="1.data.html#id3" title="Link to this heading"></a></h2>
+<p><a class="reference external" href="https://seekgene-public.oss-cn-beijing.aliyuncs.com/software/data/reference/GRCh38.tar.gz">Download-human-reference-GRCh38</a> - md5: 5473213ae62ebf35326a85c8fba6cc42</p>
+<p><a class="reference external" href="https://seekgene-public.oss-cn-beijing.aliyuncs.com/software/data/reference/hg38_rRNA.tar.gz">Download-hg38-rRNA</a> - md5: 9949f6cea38633daf1d5bf1a2b976488</p>
+<p><a class="reference external" href="https://seekgene-public.oss-cn-beijing.aliyuncs.com/software/data/reference/mm10.tar.gz">Download-mouse-reference-mm10</a> - md5: 5c7c63701ffd7bb5e6b2b9c2b650e3c2</p>
+<p><a class="reference external" href="http://seekgene-public.oss-cn-beijing.aliyuncs.com/software/data/reference/mm10_rRNA.tar.gz">Download-mouse-rRNA</a> - md5: 7a1c2d573086fa9240c8978bb8a859f7</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-2" name="sd-tab-set-1" type="radio"/>
+<label class="sd-tab-label" for="sd-tab-item-2">
+wget</label><div class="sd-tab-content docutils">
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>wget<span class="w"> </span>-c<span class="w"> </span>-O<span class="w"> </span>GRCh38.tar.gz<span class="w"> </span><span class="s2">"https://seekgene-public.oss-cn-beijing.aliyuncs.com/software/data/reference/GRCh38.tar.gz"</span>
+<span class="c1"># decompress</span>
+tar<span class="w"> </span>-zxvf<span class="w"> </span>GRCh38.tar.gz
+
+wget<span class="w"> </span>-c<span class="w"> </span>-O<span class="w"> </span>hg38_rRNA.tar.gz<span class="w"> </span><span class="s2">"https://seekgene-public.oss-cn-beijing.aliyuncs.com/software/data/reference/hg38_rRNA.tar.gz"</span>
+tar<span class="w"> </span>-zxvf<span class="w"> </span>hg38_rRNA.tar.gz
+
+wget<span class="w"> </span>-c<span class="w"> </span>-O<span class="w"> </span>mm10.tar.gz<span class="w"> </span><span class="s2">"https://seekgene-public.oss-cn-beijing.aliyuncs.com/software/data/reference/mm10.tar.gz"</span>
+tar<span class="w"> </span>-zxvf<span class="w"> </span>mm10.tar.gz
+
+wget<span class="w"> </span>-c<span class="w"> </span>-O<span class="w"> </span>mouse_rRNA.tar.gz<span class="w"> </span><span class="s2">"http://seekgene-public.oss-cn-beijing.aliyuncs.com/software/data/reference/mm10_rRNA.tar.gz"</span>
+tar<span class="w"> </span>-zxvf<span class="w"> </span>mouse_rRNA.tar.gz
+</pre></div>
+</div>
+</div>
+<input id="sd-tab-item-3" name="sd-tab-set-1" type="radio"/>
+<label class="sd-tab-label" for="sd-tab-item-3">
+curl</label><div class="sd-tab-content docutils">
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>-C<span class="w"> </span>-<span class="w"> </span>-o<span class="w"> </span>GRCh38.tar.gz<span class="w"> </span><span class="s2">"https://seekgene-public.oss-cn-beijing.aliyuncs.com/software/data/reference/GRCh38.tar.gz"</span>
+<span class="c1"># decompress</span>
+tar<span class="w"> </span>-zxvf<span class="w"> </span>GRCh38.tar.gz
+
+curl<span class="w"> </span>-C<span class="w"> </span>-<span class="w"> </span>-o<span class="w"> </span>hg38_rRNA.tar.gz<span class="w"> </span><span class="s2">"https://seekgene-public.oss-cn-beijing.aliyuncs.com/software/data/reference/hg38_rRNA.tar.gz"</span>
+tar<span class="w"> </span>-zxvf<span class="w"> </span>hg38_rRNA.tar.gz
+
+curl<span class="w"> </span>-C<span class="w"> </span>-<span class="w"> </span>-o<span class="w"> </span>mm10.tar.gz<span class="w"> </span><span class="s2">"https://seekgene-public.oss-cn-beijing.aliyuncs.com/software/data/reference/mm10.tar.gz"</span>
+tar<span class="w"> </span>-zxvf<span class="w"> </span>mm10.tar.gz
+
+curl<span class="w"> </span>-C<span class="w"> </span>-<span class="w"> </span>-o<span class="w"> </span>mouse_rRNA.tar.gz<span class="w"> </span><span class="s2">"http://seekgene-public.oss-cn-beijing.aliyuncs.com/software/data/reference/mm10_rRNA.tar.gz"</span>
+tar<span class="w"> </span>-zxvf<span class="w"> </span>mouse_rRNA.tar.gz
+</pre></div>
+</div>
+</div>
+</div>
+<p>The assembly of the reference genome refers to <a class="reference internal" href="../../reference.html#ref-label"><span class="std std-ref">How to build reference genome?</span></a></p>
+</section>
+</section>
+</div>
+</div>
+        </div>
+        
+
+        <div class="section" id="section-27">
+            <h1>multivdj — seeksoultools  documentation</h1>
+            <div class="file-path">Source: seeksoul.seekgene.com/en/v1.3.0/2.tutorial/4.multivdj/1.multivdj.html</div>
+            <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<section id="multivdj">
+<h1>multivdj<a class="headerlink" href="1.multivdj.html#multivdj" title="Link to this heading"></a></h1>
+<p>This module is used for joint analysis of 5’ RNA and VDJ data.</p>
+<section id="id1">
+<h2>Run SeekSoulTools<a class="headerlink" href="1.multivdj.html#id1" title="Link to this heading"></a></h2>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>seeksoultools<span class="w"> </span>multivdj<span class="w"> </span>run<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--rnafq1<span class="w"> </span>/path/to/demo/rna.demo.R1.fq.gz<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--rnafq2<span class="w"> </span>/path/to/demo/rna.demo.R2.fq.gz<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--tcrfq1<span class="w"> </span>/path/to/demo/tcr.demo.R1.fq.gz<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--tcrfq2<span class="w"> </span>/path/to/demo/tcr.demo.R2.fq.gz<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--samplename<span class="w"> </span>demo_multi<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--organism<span class="w"> </span>human<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--core<span class="w"> </span><span class="m">8</span><span class="w">  </span><span class="se">\</span>
+<span class="w">	</span>--genomeDir<span class="w"> </span>/path/to/GRCh38/star<span class="w">  </span><span class="se">\</span>
+<span class="w">        </span>--gtf<span class="w"> </span>/path/to/GRCh38/genes/genes.gtf<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--include-introns<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--outdir<span class="w"> </span>./<span class="w"> </span>
+</pre></div>
+</div>
+</section>
+<section id="id2">
+<h2>Parameter descriptions<a class="headerlink" href="1.multivdj.html#id2" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Parameters</p></th>
+<th class="head"><p>Descriptions</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>–rnafq1</p></td>
+<td><p>The input FASTQ R1 file for RNA sequencing data. Required.</p></td>
+</tr>
+<tr class="row-odd"><td><p>–rnafq2</p></td>
+<td><p>The input FASTQ R2 file for RNA sequencing data. Required.</p></td>
+</tr>
+<tr class="row-even"><td><p>–tcrfq1</p></td>
+<td><p>The input FASTQ R1 file for TCR sequencing data.</p></td>
+</tr>
+<tr class="row-odd"><td><p>–tcrfq2</p></td>
+<td><p>The input FASTQ R2 file for TCR sequencing data.</p></td>
+</tr>
+<tr class="row-even"><td><p>–bcrfq1</p></td>
+<td><p>The input FASTQ R1 file for BCR sequencing data.</p></td>
+</tr>
+<tr class="row-odd"><td><p>–bcrfq2</p></td>
+<td><p>The input FASTQ R2 file for BCR sequencing data. Optional. Note: At least one set of parameters (–tcrfq or –bcrfq) must be specified. This can be either tcrfq1 and tcrfq2, or bcrfq1 and bcrfq2, or all four parameters.</p></td>
+</tr>
+<tr class="row-even"><td><p>–samplename</p></td>
+<td><p>Sample name. A directory will be created named after the sample name in the outdir directory. Only digits, letters, and underscores are supported.</p></td>
+</tr>
+<tr class="row-odd"><td><p>–organism</p></td>
+<td><p>organism, Available options: human，mouse</p></td>
+</tr>
+<tr class="row-odd"><td><p>–cfg</p></td>
+<td><p>When the species is not human or mouse, the ref file needs to be configured by itself, and the file that records three REFs is the value of the parameter.</p></td>
+</tr>
+<tr class="row-even"><td><p>–core</p></td>
+<td><p>Number of threads used for the analysis</p></td>
+</tr>
+<tr class="row-odd"><td><p>–genomeDir</p></td>
+<td><p>Path to another version of STAR for alignment. The version must be compatible with the –genomeDir version. The default –star_path is the STAR in the environment.</p></td>
+</tr>
+<tr class="row-even"><td><p>–gtf</p></td>
+<td><p>Path to the GTF file for the corresponding species.</p></td>
+</tr>
+<tr class="row-odd"><td><p>–include-introns</p></td>
+<td><p>When disabled, only exon reads are used for quantification. When enabled, intron reads are also used for quantification.</p></td>
+</tr>
+<tr class="row-even"><td><p>–start_path</p></td>
+<td><p>Path to another version of STAR for alignment. The version must be compatible with the –genomeDir version. The default –star_path is the STAR in the environment.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</div>
+</div>
+        </div>
+        
+    </div>
+    
+    <script>
+        // Добавляем оглавление
+        document.getElementById('toc-list').innerHTML = `<li><a href="#section-0">SeekSoulTools — seeksoultools  documentation</a></li>
+<li><a href="#section-1">Download — seeksoultools  documentation</a></li>
+<li><a href="#section-2">Installation Guide — seeksoultools  documentation</a></li>
+<li><a href="#section-3">Tutorials — seeksoultools  documentation</a></li>
+<li><a href="#section-4">How to Build Reference Genome? — seeksoultools  documentation</a></li>
+<li><a href="#section-5">FAQ — seeksoultools  documentation</a></li>
+<li><a href="#section-6">Release Notes — seeksoultools  documentation</a></li>
+<li><a href="#section-7">Search — seeksoultools  documentation</a></li>
+<li><a href="#section-8">Index — seeksoultools  documentation</a></li>
+<li><a href="#section-9">utils module — seeksoultools  documentation</a></li>
+<li><a href="#section-10">multivdj module — seeksoultools  documentation</a></li>
+<li><a href="#section-11">rna module — seeksoultools  documentation</a></li>
+<li><a href="#section-12">fast module — seeksoultools  documentation</a></li>
+<li><a href="#section-13">vdj module — seeksoultools  documentation</a></li>
+<li><a href="#section-14">Output descriptions — seeksoultools  documentation</a></li>
+<li><a href="#section-15">Algorithms Overview — seeksoultools  documentation</a></li>
+<li><a href="#section-16">Run SeekSoulTools — seeksoultools  documentation</a></li>
+<li><a href="#section-17">Data preparation — seeksoultools  documentation</a></li>
+<li><a href="#section-18">Output descriptions — seeksoultools  documentation</a></li>
+<li><a href="#section-19">Algorithms Overview — seeksoultools  documentation</a></li>
+<li><a href="#section-20">Run SeekSoulTools — seeksoultools  documentation</a></li>
+<li><a href="#section-21">Data preparation — seeksoultools  documentation</a></li>
+<li><a href="#section-22">addtag — seeksoultools  documentation</a></li>
+<li><a href="#section-23">Output descriptions — seeksoultools  documentation</a></li>
+<li><a href="#section-24">Algorithms Overview — seeksoultools  documentation</a></li>
+<li><a href="#section-25">Run SeekSoulTools — seeksoultools  documentation</a></li>
+<li><a href="#section-26">Data preparation — seeksoultools  documentation</a></li>
+<li><a href="#section-27">multivdj — seeksoultools  documentation</a></li>`;
+        
+        // Добавляем плавную прокрутку
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

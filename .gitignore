@@ -1,0 +1,24 @@
+# Исключить большие архивы
+*.tar.gz
+*.zip
+*.rar
+*.7z
+
+# Исключить папку tools 
+tools/
+
+# Исключить результаты анализа
+results/
+
+# Исключить файлы данных
+data/*.fq.gz
+data/*.fastq.gz
+data/*.fastq
+data/*.fq
+
+# Общие исключения
+*.log
+*.tmp
+*.cache
+.DS_Store
+Thumbs.db
