@@ -57,10 +57,10 @@ chmod +x seeksoultools
 ### Для ваших данных:
 ```bash
 ./seeksoultools vdj run \
-    --fq1 /home/besliky/Laboratory/Sequences/TCR_Sequences/data/20023_3_library_TCR_L01_R1.fq.gz \
-    --fq2 /home/besliky/Laboratory/Sequences/TCR_Sequences/data/20023_3_library_TCR_L01_R2.fq.gz \
+    --fq1 ../Laboratory/Sequences/TCR_Sequences/data/20023_3_library_TCR_L01_R1.fq.gz \
+    --fq2 ../data/20023_3_library_TCR_L01_R2.fq.gz \
     --samplename TCR_20023_3_library \
-    --outdir /home/besliky/Laboratory/Sequences/TCR_Sequences/results/tcr_analysis \
+    --outdir ../results/tcr_analysis \
     --chain TR \
     --core 8 \
     --organism human
