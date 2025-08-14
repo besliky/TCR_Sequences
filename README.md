@@ -57,7 +57,7 @@ chmod +x seeksoultools
 ### Для ваших данных:
 ```bash
 ./seeksoultools vdj run \
-    --fq1 ../Laboratory/Sequences/TCR_Sequences/data/20023_3_library_TCR_L01_R1.fq.gz \
+    --fq1 ../data/20023_3_library_TCR_L01_R1.fq.gz \
     --fq2 ../data/20023_3_library_TCR_L01_R2.fq.gz \
     --samplename TCR_20023_3_library \
     --outdir ../results/tcr_analysis \
